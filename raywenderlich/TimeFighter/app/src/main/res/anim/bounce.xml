@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillAfter="true"
+    android:interpolator="@android:anim/bounce_interpolator" >
+    <scale
+        android:duration="2000"
+        android:fromXScale="2.0"
+        android:fromYScale="2.0"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:toXScale="1.0"
+        android:toYScale="1.0" />
+
+</set>
+
+<!--
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillAfter="true" the view won't return to the original position in the end of the animation
+    android:interpolator="@android:anim/bounce_interpolator" > acceleration curve for animation
+    <scale scale transformation, how will it occurs
+        android:duration="2000" //milliseconds
+        android:fromXScale="2.0" // start with twice the original value
+        android:fromYScale="2.0"
+        android:pivotX="50%" // origin for animation, center the  view
+        android:pivotY="50%"
+        android:toXScale="1.0" // final scale value (to return to the original size)
+        android:toYScale="1.0" />
+</set>
+-->
