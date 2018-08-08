@@ -1,3 +1,18 @@
+## Onibus App 
+###### Customizing Google Maps Sample
+
+Language:
+- Java
+
+Resources:
+- Google Maps v2 Sample of Polylines and Poligons
+
+Screenshot:
+
+![alt text](https://cdn.pbrd.co/images/HyfGuD0.png "Main Screen")
+
+![alt text](https://cdn.pbrd.co/images/HyfGOod.png "Main Screen")
+
 Google Maps Android API Sample: Polylines and Polygons
 ==========================================================
 
