@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">JW Notebook</string>
+
+    <string name="hello_world">Hello world! JW Notebook!</string>
+    <string name="action_new">Novo</string>
+    <string name="sobre">Sobre</string>
+    <string name="action_search">Pesquisar Texto</string>
+    <string name="title_activity_escritor">Escrever</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_save">Salvar</string>
+
+</resources>

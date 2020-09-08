@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/branco"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView android:id="@+id/tv_info"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:background="@color/color_vermelho"
+        android:text="@string/registrar_ocorrencia"
+        android:textColor="@color/branco"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:layout_marginTop="10dp" >
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+            <FrameLayout
+                android:padding="2dp"
+                android:paddingRight="3dp"
+                android:paddingLeft="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp">
+                <Button android:id="@+id/btn_localizar"
+                    android:background="@drawable/selector_button_buscar"
+                    android:text="Buscar Localização"
+                    android:textColor="@color/branco"
+                    android:drawableLeft="@drawable/map"
+                    android:drawablePadding="5dp"
+                    android:padding="20dp"
+                    android:paddingRight="3dp"
+                    android:paddingLeft="2dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.24" />
+                <ProgressBar
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/progressBar"
+                    android:layout_gravity="center" />
+            </FrameLayout>
+
+            <!--ImageView
+                android:src="@drawable/buscar"
+                android:scaleType="fitCenter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button3"
+                android:layout_gravity="center_horizontal" />
+                <! - -android:text="Buscar Localização"-->
+                <ImageView android:id="@+id/iv_check_localizar"
+                    android:visibility="gone"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ic_check"
+                    android:tint="@color/color_verde"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button android:id="@+id/btn_info_add"
+                android:background="@drawable/selector_button_info_add"
+                android:text="Informações Adicionais"
+                android:textColor="@color/branco"
+                android:drawableLeft="@drawable/info_detalhe"
+                android:drawablePadding="5dp"
+                android:padding="20dp"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <!--ImageView
+                android:padding="5dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/info"
+                android:scaleType="fitCenter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button4"
+                android:layout_gravity="center_horizontal" />
+                <! -android:text="Adicionar Informações Adicionais"-->
+            <ImageView android:id="@+id/iv_check_info"
+                android:visibility="gone"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_check"
+                android:tint="@color/color_verde"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+    </LinearLayout>
+        <EditText
+            android:visibility="invisible"
+            android:hint="@string/edt_informacao_add"
+
+            android:maxHeight="150dp"
+            android:layout_width="248dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_info_add"
+            android:layout_gravity="center" />
+
+        <Button
+            android:background="@drawable/selector_button_enviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enviar"
+            android:textColor="@color/branco"
+            android:id="@+id/btn_enviar"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginTop="5dp" />
+    </LinearLayout>
+
+</LinearLayout>

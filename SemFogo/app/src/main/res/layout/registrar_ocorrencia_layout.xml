@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- ActionBar personalizada -->
+    <include layout="@layout/action_bar_layout" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Titulo -->
+        <LinearLayout
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:id="@+id/tv_descricao"
+                android:text="@string/registro_descricao"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <!-- Implementar Ligacao -->
+            <ImageButton
+                android:id="@+id/ib_ligar_bombeiros"
+                android:src="@drawable/button_bombeiro"
+                android:scaleType="fitCenter"
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/view_linha_layout" />
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:paddingLeft="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/selector_button_registrar"
+                android:drawableLeft="@drawable/icon_registrar_ocorrencia"
+                android:drawablePadding="15dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Buscar Localização"
+                android:textAlignment="textStart"
+                android:id="@+id/btn_buscar_localizacao" />
+
+            <ProgressBar
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBarLocalizacao" />
+
+            <TextView
+                android:visibility="gone"
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="ok"
+                android:id="@+id/tv_ok"
+                android:textColor="@color/color_vermelho_baixo" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingLeft="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingRight="5dp">
+
+                <TextView
+                    android:text="Informações\nAdicionais"
+                    android:textSize="16sp"
+                    android:textColor="@color/preto"
+                    android:drawableLeft="@drawable/info_detalhe"
+                    android:drawablePadding="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="2dp" />
+                <View
+                    android:layout_gravity="center"
+                    android:background="@color/preto"
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="2dp" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <View
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/preto"
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="13dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <EditText
+                android:background="@drawable/informacao_adicional_bottom"
+                android:layout_marginLeft="35dp"
+                android:layout_width="match_parent"
+                android:maxLength="255"
+                android:maxHeight="120dp"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine|textCapSentences"
+                android:ems="10"
+                android:id="@+id/et_informacao_adicional"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="13dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:paddingLeft="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/selector_button_registrar"
+                android:drawableLeft="@drawable/camera"
+                android:drawablePadding="15dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Enviar Imagem"
+                android:textAlignment="textStart"
+                android:id="@+id/btn_enviar_imagem"
+                android:visibility="visible" />
+
+            <ProgressBar
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBarImagem" />
+
+            <!-- Colocar button para ver as fotos e com possibilidade de excluir (IOS fdp)-->
+            <TextView
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/imagemCount"
+                android:textColor="@color/color_vermelho_baixo" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/selector_button_app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enviar Ocorrência"
+            android:textColor="@color/preto"
+            android:textStyle="bold"
+            android:id="@+id/btn_enviar_chamado" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/jogo_do_riverraid" />
+
+    <br.livro.android.cap7.canvas.view.RiverRaid
+        android:id="@+id/riverRaid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout><!-- From: file:/home/luciano/AndroidStudioProjects/LivroAndroidCap07-Canvas/app/src/main/res/layout/river_raid.xml -->

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/home/luciano/AndroidStudioProjects/LivroAndroidCap07-Recursos/app/src/main/res/values/cores.xml -->
+    <eat-comment/>
+    <color name="azul">#0000ff</color>
+    <color name="branco">#ffffff</color>
+    <color name="verde">#00ff00</color>
+    <color name="vermelho">#ff0000</color>
+    <!-- From: file:/home/luciano/AndroidStudioProjects/LivroAndroidCap07-Recursos/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="app_name">Cap07-Recursos</string>
+    <!-- From: file:/home/luciano/AndroidStudioProjects/LivroAndroidCap07-Recursos/app/src/main/res/values/texto.xml -->
+    <eat-comment/>
+    <string name="msg_verde_e_branco">Texto verde e branco - i18n</string>
+    <string name="msg_vermelho_e_branco">Texto vermelho e branco - i18n</string>
+    <string name="texto1">Texto campo 1 azul</string>
+    <!-- From: file:/home/luciano/AndroidStudioProjects/LivroAndroidCap07-Recursos/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="texto_azul_e_branco">Texto azul e branco</string>
+    <!-- From: file:/home/luciano/AndroidStudioProjects/LivroAndroidCap07-Recursos/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+
+
+        <!--
+        O AndroidManifest.xml usa este tema >  android:theme="@style/AppTheme" 
+        
+        Customize o que você quiser aqui, pois vale para toda a aplicação.
+        
+        Mas geralmente é melhor criar estilos isolados, para os textos, porque alterar um tema altera muita coisa, tenha cuidado e estude 
+        sobre os temas padrões, pois você pode herdá-los.
+
+        -->
+
+
+        <!--
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:background">#ff0000</item>
+        <item name="android:textStyle">italic</item>
+
+        -->
+
+    </style>
+    <!-- From: file:/home/luciano/AndroidStudioProjects/LivroAndroidCap07-Recursos/app/src/main/res/values/css.xml -->
+    <eat-comment/>
+    <style name="estiloExemplo">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:background">#ff0000</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+</resources>

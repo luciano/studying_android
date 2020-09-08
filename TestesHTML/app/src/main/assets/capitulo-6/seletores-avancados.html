@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Seletores Avançados</title>
+    </head>
+
+    <body>
+        <header>
+            <h2>Seletores Avançados</h2>
+        </header>
+
+        <section>
+            <p>
+                Os seletores CSS mais comuns e tradicionais são os que já vimos: por <em>ID</em>, por <em>classes</em> e por descendência.
+                No entanto, há muitos outros seletores novos que vão entrando na especificação e que são bastante úteis.
+            </p>
+        </section>
+
+        <section>
+            <h2>Seletor de Irmãos</h2>
+            <p>
+                <code>
+                &lt;article><br>
+                    &emsp;&lt;h1>Título&lt;/h1><br>
+                    &emsp;&lt;p>Início&lt;/p><br>
+                    &emsp;&lt;h2>Subtítulo&lt;/h2><br>
+                    &emsp;&lt;p>Texto&lt;/p><br>
+                    &emsp;&lt;p>Mais texto&lt;/p><br>
+                &lt;/article><br><br>
+                </code>
+
+                Como faremos se quisermos estilizar de uma certa maneira todos os parágrafos após o subtítulo? <br>
+                O seletor de irmãos (siblings) (~) serve pra isso! Ele vem do CSS 3 e funciona em todos os navegadores
+                modernos. <br><br>
+                <code>
+                h2 ~ p {<br>
+                    &emsp;font-style: italic;<br>
+                }<br><br>
+                </code>
+
+                Isso indica que queremos selecionar todos os <em>p</em> que foram precedidos por algum h2 e são irmãos do subtítulo
+                (ou seja, estão sob a mesma tag pai). No HTML anterior, serão selecionados os dois últimos parágrafos (Texto
+                e Mais texto).
+            </p>
+        </section>
+        <section>
+            <h2>Seletor de Irmãos Adjacentes</h2>
+
+            <p>
+            Ainda como HTML anterior, o que fazer se quisermos selecionar apenas o parágrafo imediatamente seguinte
+            ao subtítulo? Ou seja, é um <em>p</em> irmão do <em>h2</em> mas que aparece logo na sequência.<br>
+            Fazemos isso com o seletor de irmão adjacentes - adjacent sibling:<br><br>
+            <code>
+            h2 + p {<br>
+                &emsp;font-variant: small-caps;<br>
+            }<br><br>
+            </code>
+            Nesse caso, apenas o parágrafo Texto será selecionado. É um irmão de &lt;h2> e aparece logo depois do mesmo.
+            </p>
+        </section>
+
+        <section>
+            <h2>Seletor de filho direto</h2>
+
+            <code>
+            <br>
+            &lt;article><br>
+                &emsp;&lt;h1>Título principal&lt;/h1><br>
+            &lt;section><br>
+                &emsp;&lt;h1>Título da seção&lt;/h1><br>
+            &lt;/section><br>
+            &lt;/article><br><br>
+
+            </code><br>
+
+            Queremos deixar o título principal de outra cor. Como fazer? O seletor de nome de tag simples não vai
+            resolver:<br><br>
+
+            <code>
+            /* vai pegar todos os h1 da página */<br>
+            h1 {<br>
+            &emsp;color: blue;<br>
+            }<br><br>
+            </code>
+
+            Tentar o seletor de hierarquia também não vai ajudar:<br><br>
+
+            <code>
+            /* vai pegar todos os h1 do article, incluindo de dentro da section */<br>
+            article h1 {<br>
+            color: blue;<br>
+            }<br><br>
+            </code>
+
+            Entra aí o seletor de filho direto (>).<br><br>
+
+            <code>
+            /* vai pegar só o h1 principal, filho direto de article e não os netos */<br>
+            article > h1 {<br>
+            &emsp;color: blue;<br>
+            }<br><br>
+            </code>
+        </section>
+
+        <section>
+            <h2>Negação</h2>
+
+            <p>
+            Imagine o seguinte o HTML com vários parágrafos simples:<br><br>
+
+            <code>
+            &lt;p>Texto&lt;/p><br>
+            &lt;p>Outro texto&lt;/p><br>
+            &lt;p>Texto especial&lt;/p><br>
+            &lt;p>Mais texto&lt;/p><br>
+            </code><br>
+
+            Queremos fazer todos os parágrafos de cor cinza, exceto o que tem o texto especial. Precisamos destacá-lo
+            de alguma forma no HTML para depois selecioná-lo no CSS. Uma classe ou ID resolve: <br><br>
+
+            <code>
+                &lt;p>Texto&lt;/p><br>
+                &lt;p>Outro texto&lt;/p><br>
+                &lt;p class="especial">Texto especial&lt;/p><br>
+                &lt;p>Mais texto&lt;/p><br>
+            </code><br>
+
+            </p>
+
+            <p>
+            Mas como escrever o CSS? Queremos mudar a cor dos parágrafos que não têm a classe especial. Um jeito
+            seria mudar a cor de todos e sobrescrever o especial depois: <br><br>
+
+            <code>
+            p {<br>
+            color: gray;<br>
+            }<br><br>
+            p.especial {<br>
+            color: black; /* restaura cor do especial */<br>
+            }<br>
+            </code>
+            <br>
+            No CSS 3 há uma outra forma, usando o seletor de negação. Ele nos permite escrever um seletor que pega
+            elementos que não batem naquela regra. <br><br>
+
+            <code>
+            p:not(.especial) {<br>
+            &emsp;color: gray;<br>
+            }<br>
+            </code>
+            </p>
+
+            <p>
+            Isso diz que queremos todos os parágrafos que não têm a classe especial. A sintaxe do <strong>:not()</strong> recebe como
+            argumento algum outro seletor simples (como classes, IDs ou tags).
+            </p>
+
+        </section>
+
+    </body>
+</html>

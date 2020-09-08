@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Testes de APP </string>
+    <string name="Labelname">Menu dos Testes </string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_text_view1">TextView1</string>
+    <string name="Text1"> \nPrimeira TextView simples.\n</string>
+    <string name="Text2">Os caracteres especiais \\ funcionam normalmente como em uma string em \"C\"!</string>
+    <string name="Text3"> \nUsando atributo backgraund para cor de fundo\n\t\t\tUtilizando cores diferentes. </string>
+    <string name="title_activity_edit_text1">EditText1</string>
+    <string name="Title1">Escreva no campo abaixo: </string>
+    <string name="title_activity_button1">Button1</string>
+    <string name="Button1"> Button XML </string>
+    <string name="title_activity_intent1">Intent1</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_tela2_intent1">Tela2Intent1</string>
+    <string name="title_activity_tela_parametros_intent1">TelaParametrosIntent1</string>
+    <string name="title_activity_menu_intent">MenuIntent</string>
+    <string name="title_activity_menu_button">MenuButton</string>
+    <string name="title_activity_menu_edit_text">MenuEditText</string>
+    <string name="title_activity_menu_text_view">MenuTextView</string>
+    <string name="title_activity_menu_intent_filter">MenuIntentFilter</string>
+    <string name="title_activity_menu_list_view">MenuListView</string>
+    <string name="title_activity_list_view1">ListView1</string>
+    <string name="title_activity_menu_ciclo_vida">MenuCicloVidaActivity</string>
+    <string name="title_activity_ciclo_vida_activity1">CicloVidaActivity1</string>
+    <string name="title_activity_list_view2_tela1">ListView2Tela1</string>
+    <string name="title_activity_list_view2_tela2">ListView2Tela2</string>
+    <string name="title_activity_list_view2_tela3">ListView2Tela3</string>
+    <string name="title_activity_list_view2_tela4">ListView2Tela4</string>
+    <string name="title_activity_list_view3">ListView3</string>
+    <string name="title_activity_list_view5">ListView5</string>
+    <string name="title_activity_menu_intent_abrir_browser">MenuIntentAbrirBrowser</string>
+    <string name="title_activity_intent_abrir_browser2">IntentAbrirBrowser2</string>
+    <string name="title_activity_intent_abrir_browser3">IntentAbrirBrowser3</string>
+    <string name="title_activity_menu_intent_ligar_telefone">MenuIntentLigarTelefone</string>
+    <string name="title_activity_intent_ligar_telefone3">IntentLigarTelefone3</string>
+    <string name="title_activity_menu_intent_visualizar_contatos">MenuIntentVisualizarContatos</string>
+    <string name="title_activity_menu_intent_com_resultado">MenuIntentComResultado</string>
+    <string name="title_activity_vizualizar_contatos_selecionar">VizualizarContatosSelecionar
+    </string>
+    <string name="title_activity_activity_principal">ActivityPrincipal</string>
+    <string name="title_activity_menu_intent_abrir_mapa">MenuIntentAbrirMapa</string>
+    <string name="title_activity_aptela1">APTela1</string>
+    <string name="title_activity_aptela2">APTela2</string>
+    <string name="title_activity_aptela3">APTela3</string>
+    <string name="title_activity_pesquisa_local">PesquisaLocal</string>
+    <string name="title_activity_ciclo_vida_activity2">CicloVidaActivity2</string>
+    <string name="title_activity_ciclo_vida_activity3">CicloVidaActivity3</string>
+    <string name="title_activity_envair_sms1">envairSMS1</string>
+    <string name="title_activity_menu_intent_enviar_email">MenuIntentEnviarEmail</string>
+    <string name="title_activity_menu_layout">MenuLayout</string>
+
+</resources>

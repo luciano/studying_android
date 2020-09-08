@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Usando arquivo externo CSS</title>
+        <link rel="stylesheet" href="css/estilos-simples.css">
+    </head>
+    <body>
+        <h2>Usando estilos personalizados</h2>
+        <p>
+            A terceira maneira de declararmos os estilos do nosso documento é com um arquivo externo
+            geralmente com a extensão <code>.css</code>. Para que seja possivel declarar nosso CSS em um arquivo
+            externo precisamos indicar em nosso documento HTML uma ligação com a folha de estilo.
+        </p>
+
+        <p>
+            Utilizar a folha externa de estilo deixa o codigo mais organizado e limpo.
+            Para indicar a folha de estilo externa deve ser feito na tag <code>&lt;head></code>
+            do documento. Conforme abaixo:
+        </p>
+        <p><code>
+            &lt;link rel="stylesheet" href="estilos.css">
+        </code></p>
+
+        <p style="color: black; background-color: white;">
+            Da mesma maneira que podemos alerar cores, podemos alterar o texto.
+            Podemos definir fontes com o uso da propriedade <code>font-family</code><br>
+            Apropriedade font-family pode receber seu valor comou sem aspas. No primeiro caso, passaremos o nome
+            do arquivo de fonte a ser utilizado, no último, passaremos a família da fonte.<br>
+
+            É comum colocar alguns nomes de fontes que gostariamos de verificar se existem no dispositivo.
+            No h3, caso a fonte “Arial” não esteja disponível, o navegador vericará a disponibilidade da próxima fonte declarada,
+            no nosso exemplo a “Helvetica”. Caso o navegador não encontre também essa fonte, ele solicita qualquer
+            fonte que pertença à família “sans-serif ”, declarada logo a seguir, e a utiliza para exibir o texto, não importa
+            qual seja ela.<br> </p>
+            <h3>Exemplo de h3 com fonte alterada</h3><br>
+        <p style="color: black; background-color: white;">
+            Temos outras propriedades para manipular a fonte, como a propriedade <code>font-style</code>, que dene o estilo da
+            fonte que pode ser: normal (normal na vertical), italic (inclinada) e oblique (oblíqua).<br>
+            Exemplos:
+        </p>
+
+        <h3 style="font-style: normal;">Texto com <code>font-style: normal </code> para o exemplo</h3>
+        <h3 style="font-style: italic;">Texto com <code>font-style: italic </code> para o exemplo</h3>
+        <h3 style="font-style: oblique;">Texto com <code>font-style: oblique </code> para o exemplo</h3>
+
+    </body>
+</html>

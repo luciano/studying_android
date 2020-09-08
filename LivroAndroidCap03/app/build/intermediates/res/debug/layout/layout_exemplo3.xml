@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Exemplo de imagens utilizando a classe ImageView"
+        android:textColor="#000000" />
+
+    <!--
+        A imagem smile1.png é definida diretamente no codigo fonte
+        do XML. Usando o atributo android:src="@drawable/smile1"
+        para exibir a imagem smile1.png da pasta drawable
+
+        A notacao @drawable/nomeImagem é a forma de acessar os
+        recursos de imagem no Android.
+    -->
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="\tImagem Inserida no XML"
+        android:textColor="#ff625eff" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/smile1" />
+
+    <!--
+        A segunda imagem nao foi definida no arquivo XML
+        apenas foi definida a tag <ImageView>
+
+        "Reserva" um lugar para a imagem na interface grafica
+
+        Se esse local reservado é inserido algum conteudo
+        esse conteudo é mostrado na tela
+        Caso nao seja colocado nenhum conteudo nesse local
+        nao é mostrado nada na tela
+
+        Reserva lugar para receber uma imagem dinamicamente
+    -->
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="\tImagem Inserida Dinamicamente com metodo setImageResource!"
+        android:textColor="#000000" />
+
+    <ImageView
+        android:id="@+id/imagem2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="\tImagem Inserida no XML"
+        android:textColor="#ff625eff" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/smile1" />
+
+    <!-- Nao sera exibida pois nao foi
+        inserido nada no espaco reservado -->
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="\tImagem Inserida Dinamicamente sem metodo setImageResource para inserir imagem!\nNao mostra nada mas reserva espaco, que so sera preenchido com insercao da imagem!"
+        android:textColor="#000000" />
+    <ImageView
+        android:id="@+id/imagem3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Exibi imagem atraves do XML-->
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="\tImagem Inserida no XML"
+        android:textColor="#ff625eff" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/smile2" />
+
+</LinearLayout><!-- From: file:/home/luciano/AndroidStudioProjects/LivroAndroidCap03/app/src/main/res/layout/layout_exemplo3.xml -->

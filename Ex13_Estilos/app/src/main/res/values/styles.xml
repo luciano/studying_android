@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- No emulador funcionou perfeitamente
+        no Samsung Galaxy S II ele nao mudou o Button e RadioButton
+        executei o mesmo codigo. No samsung so funciona se ir nas
+        propriedades e alterar em cada componente-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textColor">@color/vermelho</item>
+        <item name="android:buttonStyle">@style/meuBotao</item>
+        <item name="android:radioButtonStyle">@style/meuRadio</item>
+    </style>
+
+    <!-- tambem funciona
+    <style name="meuBotao" parent="@android:style/Widget.Button">
+    -->
+    <style name="meuBotao" parent="android:Widget.Button">
+        <item name="android:background">@drawable/selector_botao</item>
+        <item name="android:textColor">@color/branco</item>
+    </style>
+
+    <!-- tambem funciona
+    <style name="meuRadio" parent="@android:style/Widget.CompoundButton.RadioButton">
+    -->
+    <style name="meuRadio" parent="android:Widget.CompoundButton.RadioButton">
+        <item name="android:button">@drawable/selector_radio</item>
+    </style>
+
+    <style name="estiloExemplo">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/branco</item>
+        <item name="android:background">@color/verde</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+</resources>

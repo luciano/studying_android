@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--color name="colorPrimary">#f22a2a</color-->
+    <color name="colorPrimary">#FFFF0000</color>
+    <color name="colorPrimaryDark">#ab0e06</color> <!-- #ebbe1111 -->
+    <color name="colorAccent">#fa6365</color>
+    <color name="colorNavigation">#ab0e06</color>
+    <color name="preto">#ff000000</color>
+    <color name="branco">#ffffffff</color>
+    <color name="branco_click">#6df7f7f7</color>
+    <color name="branco_click2">#eacecece</color>
+    <color name="linha">#d6d6d6</color>
+    <color name="fundo_como_funciona_impar">#f9f6ed</color>
+    <color name="fundo_como_funciona_par">#fefcf7</color>
+
+
+    <color name="color_fogo">#FFFDCE0C</color>
+    <color name="color_fogo_mesclada">#ffe477</color>
+
+    <color name="color_vermelho">#FFFF0000</color>
+    <color name="color_vermelho_escuro">#FF870608</color>
+    <color name="color_vermelho_baixo">#FFA82020</color>
+
+    <color name="color_camada1">#FFFFCF06</color>
+    <color name="color_camada2">#FFFF8F08</color>
+    <color name="color_camada3">#FFFF0000</color>
+    <color name="color_camada4">#FFA82020</color>
+
+    <color name="color_hexagono">#FF484A4C</color>
+
+    <color name="color_toolbar_amarelo">#FFFFCF06</color>
+
+    <color name="color_localizacao">#FFFF0000</color>
+
+    <color name="color_view_info">#FFFFCF06</color>
+
+    <color name="color_btn_enviar">#FF892121</color>
+    <color name="color_btn_enviar_mescla">#8c4747</color>
+
+    <color name="color_verde">#FF8BC34A</color>
+</resources>

@@ -1,0 +1,10 @@
+.container {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.cabecalho {
+    text-align: center;
+    border: 1px solid blue;
+    color: green;
+}

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="dominando.android.testes" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.UpButton1Activity"
+            android:label="@string/title_activity_up_button1"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="dominando.android.testes.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.UpButton2Activity"
+            android:label="@string/title_activity_up_button2"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="dominando.android.testes.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.PrincipalActivity"
+            android:label="@string/title_activity_principal"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="dominando.android.testes.MainActivity" />
+        </activity>
+        <activity
+            android:name=".TextView.MainTextViewActivity"
+            android:label="@string/title_activity_main_text_view"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="dominando.android.testes.MainActivity" />
+        </activity>
+        <activity
+            android:name=".TextView.FontesActivity"
+            android:label="@string/title_activity_fontes" >
+        </activity>
+        <activity
+            android:name=".fragment.MainFragmentActivity"
+            android:label="@string/title_activity_main_fragment"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="dominando.android.testes.MainActivity" />
+        </activity>
+        <activity
+            android:name=".toolbar.MainToolbarActivity"
+            android:label="@string/title_activity_main_toolbar"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="dominando.android.testes.MainActivity" />
+        </activity>
+        <activity
+            android:name=".fragment.ContainerActivity"
+            android:label="@string/title_activity_container"
+            android:parentActivityName=".fragment.MainFragmentActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="dominando.android.testes.fragment.MainFragmentActivity" />
+        </activity>
+    </application>
+
+</manifest>

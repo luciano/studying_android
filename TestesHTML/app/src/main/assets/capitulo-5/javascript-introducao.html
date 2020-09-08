@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Introdução JavaScript</title>
+    </head>
+    <body>
+        <header>
+            <h2>Introdução JavaScript</h2>
+        </header>
+
+        <section>
+            <p>
+                JavaScript é a linguagem de programação mais popular no desenvolvimento Web. Suportada por todos os
+                navegadores, a linguagem é responsável por praticamente qualquer tipo de dinamismo que queiramos em
+                nossas páginas.
+            </p>
+            <p>
+            Para rodar JavaScript em uma páginaWeb, precisamos ter emmente que a execução do código é instantânea.
+            Para inserirmos um código JavaScript em uma página, é necessário utilizar a tag &lt;script>:
+            </p>
+            <p>
+                <code>
+                    &lt;script> <br>
+                    &emsp;alert("Olá, Mundo!");<br>
+                    &lt;/script><br>
+                </code>
+            </p>
+            <script>alert("Testando JavaScript");</script>
+            <p>
+            O exemplo acima é um “hello world” em JavaScript utilizando uma função do navegador, a função <strong>alert</strong>.
+            É possível adicionar essa tag em qualquer local do documento que a sua renderização cará suspensa até o
+            término dessa execução.
+            </p>
+            <p>
+                <strong>Nota:</strong> no android não funciona a função alert.
+            </p>
+            <p>
+                Também é possível executar código que está em um arquivo externo, por exemplo: <br>
+
+                <strong>No arquivo HTML</strong><br>
+                <code>
+                    &lt;script src="js/hello.js">&lt;/script> <br>
+                </code>
+
+                <strong>No arquivo externo js/hello.js</strong><br>
+                <code>
+                    alert("Olá, mundo!");<br>
+                </code> <br>
+                Com a separação do script em arquivo externo é possível reaproveitar alguma funcionalidade em mais de
+                uma página.
+            </p>
+        </section>
+
+        <h2>Variáveis e Tipos</h2>
+        <section>
+            <p>
+               Para criar uma variável. Usa: <br>
+                <code>
+                    var nome = "uma string"; <br>
+                </code>
+            </p>
+            <p>
+                O JavaScript dá suporte aos tipos <strong>String (letras e palavras), Number (números inteiros, decimais), Boolean
+                (verdadeiro ou falso)</strong> entre outros. <br>
+
+                <code>
+                var texto = "Uma String deve ser envolvida em aspas simples ou duplas."; <br>
+                var numero = 2012; <br>
+                var verdade = true; <br>
+                </code><br>
+            </p>
+            <p>
+                Outro tipo de informação que é considerado um tipo no JavaScript é o Array, onde podemos armazenar
+                uma série de informações de tipos diferentes:<br>
+
+                <code>
+                var pessoas = ["João", "José", "Maria", "Sebastião", "Antônio"]; <br>
+                </code><br>
+
+                Quando utilizamos o JavaScript para interagir com os elementos da página é muito comum obtermos coleções.
+                Para fazer alguma coisa com cada elemento de uma coleção é necessário efetuar uma iteração. A mais
+                comum é utilizando o <strong>for</strong>: <br>
+                <code>
+                var pessoas = ["João", "José", "Maria", "Sebastião", "Antônio"];<br><br>
+
+                    for (var i = 0; i < pessoas.length; i++) {<br>
+                    &emsp;alert(pessoas[i]);<br>
+                    }<br>
+                </code>
+            </p>
+        </section>
+
+    </body>
+</html>

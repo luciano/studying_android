@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HTML Semântico</title>
+    </head>
+    <body>
+
+    <p>
+        Consideremos o codigo: <br>
+        &lt;body> <br>
+        &emsp;&emsp;&lt;header><br>
+        &emsp;&emsp;&emsp;&lt;!-- Conteúdo do cabeçalho --><br>
+        &emsp;&emsp;&lt;/header><br>
+        &emsp;&emsp;&lt;section id="main"><br>
+        &emsp;&emsp;&emsp;&lt;!-- Conteúdo principal --><br>
+        &emsp;&emsp;&lt;/section><br>
+        &emsp;&emsp;&lt;section id="destaques"><br>
+        &emsp;&emsp;&emsp;&lt;!-- Painéis com destaques --><br>
+        &emsp;&emsp;&lt;/section><br>
+        &emsp;&emsp;&lt;footer><br>
+        &emsp;&emsp;&emsp;&lt;!-- Conteúdo do rodapé --><br>
+        &emsp;&emsp;&lt;/footer><br>
+        &lt;/body><br>
+    </p>
+
+    <P>
+        Note que utilizamos o atributo id do HTML para identicar a &lt;section> principal. O atributo id deve ser
+        único em cada página, ou seja, só pode haver um elemento com o atributo id="main". Mesmo se o outro
+        elemento for de outra tag, o id não pode se repetir. De acordo com a estrutura acima, nós separamos as
+        quatro áreas principais.
+    </P>
+
+    <p>
+        As tags que usamos antes - header, section e footer - são tags novas do HTML 5. Antigamente, numa
+        situação parecida com essa, teríamos criado apenas três div, uma para cada parte da página, e talvez colocado
+        ids diferentes pra cada uma. <br>
+        Qual a diferença entre colocar div e essas novas tags do HTML¢? Visualmente e funcionalmente, nenhuma.
+        A única diferença é o nome da tag e o signicado que elas carregam. E isso é bastante importante.
+        Dizemos que a função do HTML é fazer a marcação do conteúdo da página, representar sua estrutura da
+        informação. Não é papel do HTML, por exemplo, cuidar da apresentação final e dos detalhes de design - isso
+        é papel do CSS. O HTML precisa ser claro e limpo, focado em marcar o conteúdo.<br>
+        As novas tags do HTML 5 trazem novos signicados semânticos para usarmos em elementos HTML. Em
+        vez de simplesmente agrupar os elementos do cabeçalho em um div genérico e sem signicado, usamos uma
+        tag header que carrega em si o signicado de representar um cabeçalho.<br>
+        Com isso, temos um HTML com estrutura baseada no signicado de seu conteúdo, o que traz uma série de
+        benefícios, como a facilidade de manutenção e compreensão do documento.<br>
+        Provavelmente, o design da sua página deixa bastante claro qual parte da sua página é o cabeçalho e qual
+        parte é omenu de navegação. Visualmente, são distinguíveis para o usuário comum. Mas e se desabilitarmos
+        o CSS e as regras visuais? Como distinguir esses conteúdos?<br>
+        Um HTML semântico carrega signicado independente da sua apresentação visual. Isso é particularmente
+        importante quando o conteúdo for consumido por clientes não visuais. Há vários desses cenários. Umusuário
+        cego poderia usar um leitor de tela para ouvir sua página. Neste caso, a estrutura semântica do HTML é
+        essencial para ele entender as partes do conteúdo.<br>
+    </p>
+
+    <p>
+        Para sinalizar um bloco de navegação primarios usa tag &lt;nav>
+    </p>
+
+    </body>
+</html>

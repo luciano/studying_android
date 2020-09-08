@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.livro.android.cap14.arquivos"
+    android:versionCode="1"
+    android:versionName="1.0.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <meta-data
+        android:name="com.google.android.backup.api_key"
+        android:value="AEdPqrEAAAAIZTtHNgkAq43k6wyoZkEQIqxBRI1VIoxEbJR3Rg" />
+
+    <application
+        android:allowBackup="true"
+        android:backupAgent="br.livro.android.cap14.arquivos.ExemploBackupAgent"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="br.livro.android.cap14.arquivos.Menu"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="br.livro.android.cap14.arquivos.ExemploSalvarArquivo" />
+        <activity android:name="br.livro.android.cap14.arquivos.ExemploSalvarArquivoSdCard" />
+        <activity android:name="br.livro.android.cap14.arquivos.ExemploSalvarArquivoBackup" />
+    </application>
+
+</manifest>

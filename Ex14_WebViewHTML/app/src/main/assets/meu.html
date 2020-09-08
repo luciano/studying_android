@@ -1,0 +1,21 @@
+<html>
+<header>
+   <script type="text/javascript" >
+   function showAndroidTest(s, t) {
+        window.dominando.showToast(s, t);
+   }
+   </script>
+</header>
+<body>
+<h1>Formulario HTML</h1>
+<form name="meuForm">
+    Nome:
+    <input type="text" name="textNome" /> <br>
+    Idade:
+    <input type="text" name="textIdade"> <br>
+    <input type="button"
+           onclick="showAndroidTest(textNome.value, textIdade.value);"
+           value="Enviar" >
+</form>
+</body>
+</html>

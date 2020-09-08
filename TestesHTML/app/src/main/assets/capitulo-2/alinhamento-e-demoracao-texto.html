@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Usando Alinhamento e Decoração</title>
+        <link rel="stylesheet" href="css/estilos-alinhamento.css">
+    </head>
+    <body>
+
+    <p>
+        Propriedade que refere ao alinhamento do texto: <code>text-align</code>
+        No exemplo: <br>
+        <br><code>
+            p { <br>
+                text-align: right; <br>
+            } <br>
+        </code><br>
+        O alinhamento anterior é para alinhar o texto a direita(<code>right</code>). Também é possível
+        determinar que um elemento tenha seu conteúdo alinhado ao centro(<code>center</code>)
+        , ou ocupar toda a largura do elemento aumentando o espaçamento entre as palavras
+        (<code>justify</code>). O padrão porem é alinhasr os textos a esquerda(<code>left</code>).
+    </p>
+
+    <p style="text-align: center">
+        Exemplo de um texto para usar as propriedades de alinhamento estudadas. Cada um desses
+        paragrafos de exemplo vai possuir um tipo de alinhamento para comparação dos mesmos. Esse
+        paragrafo possui o alinhamente <code>text-align: center</code>.
+    </p>
+    <p style="text-align: right">
+        Exemplo de um texto para usar as propriedades de alinhamento estudadas. Cada um desses
+        paragrafos de exemplo vai possuir um tipo de alinhamento para comparação dos mesmos. Esse
+        paragrafo possui o alinhamente <code>text-align: right</code>.
+    </p>
+    <p style="text-align: justify">
+        Exemplo de um texto para usar as propriedades de alinhamento estudadas. Cada um desses
+        paragrafos de exemplo vai possuir um tipo de alinhamento para comparação dos mesmos. Esse
+        paragrafo possui o alinhamente <code>text-align: justify</code>.
+    </p>
+    <p style="text-align: left">
+        Exemplo de um texto para usar as propriedades de alinhamento estudadas. Cada um desses
+        paragrafos de exemplo vai possuir um tipo de alinhamento para comparação dos mesmos. Esse
+        paragrafo possui o alinhamente <code>text-align: left</code>.
+    </p>
+
+    <p>
+        O estilo definido no css tambem altera outras propriedades como:<br>
+        A altura de cada linha com o atributo: <code>line-height: [valor]px</code>.<br>
+        O espaçamento entre cada letra com o atributo: <code>letter-spacing: [valor]px</code>.<br>
+        O espaçamento entre cada palavra com o atributo: <code>word-spacing: [valor]px</code>.<br>
+        O tamanho da margem da primeira letra do texto com o atributo: <code>text-indent: [valor]px</code>.<br>
+    </p>
+
+    <p>
+        A propriedade <code>background-image: url(path)</code> permite indicar um arquivo de
+        imagem para ser exibido no fundo do elemento. Por exemplo: <br>
+
+        <code>
+        h3 { <br>
+            background-image: url(../img/image-background1.png); <br>
+        } <br>
+        </code>
+        O navegador vai requisitar um arquivo image-background1.jpg que deve esta
+        na pasta informada. Exemplo:
+    </p>
+
+    <h3>Esse texto vai ser o exemplo de como usar uma imagem como background de um
+    elemento através do CSS. A imagem escolhida para o fundo do texto é muito grande
+    esse detalhe deve ser visto quando for colocar imagens na pagina, o tamanho da imagem
+    interfere em como ela vai ser exibida. Colocando esse texto maior a imagem vai ser mostrada
+    inteira para melhor exemplificação da propriedade de background.</h3>
+
+    <h2>Bordas</h2>
+
+    <p>
+        As propriedades do CSS para definirmos as <strong>bordas</strong> de um elemento
+        nos apresentam uma serie de opções. <br>
+        Para cada borda de um elemento podemos determinar sua cor, seu estilo de exibição e
+        sua largura. Por exemplo: <br>
+        <br><code>
+            body { <br>
+                border-color: red; <br>
+                border-style: solid; <br>
+                border-width: 1px; <br>
+            } <br>
+        </code> <br>
+        Para que o efeito da cor sobre a borda surta efeito, é necessário que a propriedade border-style tenha qualquer
+        valor diferente do padrão none.
+    </p>
+
+    </body>
+</html>

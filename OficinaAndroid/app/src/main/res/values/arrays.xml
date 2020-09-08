@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="fontes">
+        <item>Roboto-Black.ttf</item>
+        <item>Roboto-BlackItalic.ttf</item>
+        <item>Roboto-Bold.ttf</item>
+        <item>Roboto-BoldItalic.ttf</item>
+        <item>Roboto-Italic.ttf</item>
+        <item>Roboto-Light.ttf</item>
+        <item>Roboto-LightItalic.ttf</item>
+        <item>Roboto-Medium.ttf</item>
+        <item>Roboto-MediumItalic.ttf</item>
+        <item>Roboto-Regular.ttf</item>
+        <item>Roboto-Thin.ttf</item>
+        <item>Roboto-ThinItalic.ttf</item>
+        <item>RobotoCondensed-Bold.ttf</item>
+        <item>RobotoCondensed-BoldItalic.ttf</item>
+        <item>RobotoCondensed-Italic.ttf</item>
+        <item>RobotoCondensed-Light.ttf</item>
+        <item>RobotoCondensed-LightItalic.ttf</item>
+        <item>RobotoCondensed-Regular.ttf</item>
+        <item>Android Hollow.ttf</item>
+        <item>Android Italic.ttf</item>
+        <item>ANDROID ROBOT.ttf</item>
+        <item>Android Scratch.ttf</item>
+        <item>Android.ttf</item>
+        <item>atmostsphere.ttf</item>
+        <item>BuriedBeforeBB_Reg.otf</item>
+        <item>DK Petit Four.otf</item>
+        <item>doridrobot.ttf</item>
+        <item>earth aircraft universe.ttf</item>
+        <item>HB Sketch Demo.otf</item>
+        <item>Jumping Running.ttf</item>
+        <item>post rock.ttf</item>
+        <item>the Citizens.ttf</item>
+        <item>28 Days Later.ttf</item>
+        <item>AgentOrange.ttf</item>
+        <item>BlackWidow.ttf</item>
+        <item>DAEMONES.TTF</item>
+        <item>From Cartoon Blocks.ttf</item>
+        <item>GrandStylus.ttf</item>
+        <item>Mathilde Castleland.ttf</item>
+        <item>Mostwasted.ttf</item>
+        <item>Nightmare Before Christmas.ttf</item>
+        <item>Wedgie Regular.ttf</item>
+        <item>yorkwhiteletter.ttf</item>
+    </string-array>
+
+</resources>

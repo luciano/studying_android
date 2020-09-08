@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- ActionBar personalizada -->
+    <include layout="@layout/action_bar_layout" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Titulo -->
+        <LinearLayout
+            android:visibility="visible"
+            android:id="@+id/ultimos_registros_titulo_descricao"
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:text="@string/ultimos_registros_decricao"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <!-- Implementar Ligacao -->
+            <ImageButton
+                android:id="@+id/ib_ligar_bombeiros"
+                android:src="@drawable/button_bombeiro"
+                android:scaleType="fitCenter"
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ultimos_registros_titulo"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:text="@string/ultimos_registros"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Conteudo -->
+    <ListView android:visibility="visible"
+        android:descendantFocusability="blocksDescendants"
+        android:id="@+id/ultimos_registros_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:choiceMode="singleChoice"
+        android:clickable="true" />
+
+    <!-- Detalhes
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+    <!- -ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/ultimos_registros_item" />
+        <include layout="@layout/ultimos_registros_item" />
+        <include layout="@layout/ultimos_registros_item" />
+        <include layout="@layout/ultimos_registros_item" />
+
+    </LinearLayout>
+    </ScrollView-->
+
+
+</LinearLayout>

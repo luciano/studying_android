@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Testes HTML</string>
+    <string name="texto">Lista de Paginas em HTML</string>
+    <string name="vazio">Não foram criadas paginas HTML</string>
+
+    <plurals name="paginas">
+        <item quantity="one">Uma pagina HTML</item>
+        <item quantity="other">%1$d paginas HTML</item>
+    </plurals>
+    <string name="title_activity_web_view">Web Page</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+</resources>

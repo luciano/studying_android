@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Decoração de Textos</title>
+        <link rel="stylesheet" href="css/estilo.css">
+    </head>
+    <body>
+        <header class="cabecalho">
+            <h2>Trasnformação de texto</h2>
+        </header>
+
+        <section>
+            <p>
+                A propriedade <em>text-transform</em> permite realizar transformações
+                em textos e seus possíveis valores são:
+            </p>
+            <ul>
+                <li><strong>uppercase</strong> - Todas as letras em maiúsculo.</li>
+                <li><strong>lowercase</strong> - Todas as letras em minusculo.</li>
+                <li><strong>capitalize</strong> - Só as primeiras letras das palavras em maiúsculo.</li>
+            </ul>
+            <p>
+                Exemplo:
+            </p>
+            <p style="text-transform: uppercase;">
+                Exemplo de frase usando transformação de texto. text-transform: uppercase
+            </p>
+            <p style="text-transform: lowercase;">
+                Exemplo de frase usando transformação de texto. text-transform: lowercase
+            </p>
+            <p style="text-transform: capitalize;">
+                Exemplo de frase usando transformação de texto. text-transform: capitalize
+            </p>
+
+            <h2 class="cabecalho">Decoração de Texto</h2>
+
+            <p>
+                Existe uma serie de decorações que o navegador coloca no texto
+                dependensdo das tags que utilizamos. Exemplos: <br>
+                <a href="#">link sublinhado</a>
+                <del>del riscado</del>
+            </p>
+            <p>
+                Mas é possível mudar a decoração de um texto ou até mesmo tira-la.
+                Com a propriedade <em>text-decoration</em>. E pode receber os valores:<br>
+                <em>none</em>: nenhuma decoração;<br>
+                <em>underline</em>: linha embaixo do texto<br>
+                <em>overline</em>: linha em cima do texto<br>
+                <em>line-through</em>: linha no meio do texto<br>
+                <em>blink</em>: texto fica piscando na tela<br>
+            </p>
+            <p style="text-decoration:none;">
+                Exemplo de texto usando a decoração. text-decoration: none; <br>
+                <a>link que deveria ser sublinhado</a>
+            </p>
+            <p style="text-decoration:underline;">
+                Exemplo de texto usando a decoração. text-decoration: underline; <br>
+            </p>
+            <p style="text-decoration:overline;">
+                Exemplo de texto usando a decoração. text-decoration: overline; <br>
+            </p>
+            <p style="text-decoration:line-through;">
+                Exemplo de texto usando a decoração. text-decoration: line-through; <br>
+            </p>
+            <p style="text-decoration:blink;">
+                Exemplo de texto usando a decoração. text-decoration: blink; <br>
+            </p>
+
+            <h2>Extra</h2>
+            <p>
+                O valor <em>inherit</em> indica para o elemento filho que ele deve utilizar
+                o mesmo valor presente no elemento pai,
+                sendo assim, toda vez que o tamanho do elemento pai for alterado,
+                automaticamente o elemento filho herdará
+                o novo valor, facilitando assim, a manutenção do código. <br>
+                Lembre-se de que o inherit também afeta propriedades que não são aplicadas em cascata.<br>
+                As propriedades height e width não são cascateadas, mas essa propriedade força isso.
+            </p>
+        </section>
+    </body>
+</html>

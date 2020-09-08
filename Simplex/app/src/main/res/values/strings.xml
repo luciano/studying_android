@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Simplex</string>
+    <string name="main_name">Simplex - Tableau</string>
+
+    <string name="escolha_problema">Escolha um dos problemas de PL abaixo:</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="func_obj">Insira a função objetivo:</string>
+    <string name="func_max">Digite a função de maximização:</string>
+    <string name="restricoes">Insira as restrições:</string>
+    <string name="rest_padrao">Digite as restrições na forma padrão:</string>
+    <string name="button_ok">Resolver</string>
+    <string name="title_activity_resultado">Resultado Simplex</string>
+    <string name="title_activity_principal">Principal</string>
+    <string name="title_activity_pre_definido">Problemas pre definidos</string>
+    <string name="title_activity_inserir_quadro">Inserir Quadro</string>
+    <string name="title_activity_inserir_dados">Inserir Dados</string>
+    <string name="title_activity_menu_matrizes">MenuMatrizes</string>
+
+    <string name="hello_world">Hello world!</string>
+</resources>

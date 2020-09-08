@@ -1,0 +1,1 @@
+/home/luciano/AndroidStudioProjects/LivroAndroidCap05-Intent/app/build/intermediates/classes/debug

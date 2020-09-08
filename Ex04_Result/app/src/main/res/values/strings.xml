@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Ex04_Result</string>
+
+    <string name="selecionar_estado">Selecione um estado</string>
+    <string name="action_settings">Configurações</string>
+    <string name="title_activity_tela_selecao">Selecione</string>
+
+    <!-- Arary de strigs que pode ser recuperado no codigo com
+        R.array.nome no metodo getResources().getStringArray(R.array.nome) -->
+    <string-array name="estado">
+        <item>Alagoas</item>
+        <item>Bahia</item>
+        <item>Ceará</item>
+        <item>Maranhão</item>
+        <item>Minas Gerais</item>
+        <item>São Paulo</item>
+        <item>Rio de Janeiro</item>
+        <item>Paraíba</item>
+        <item>Pernambuco</item>
+        <item>Piauí</item>
+        <item>Sergipe</item>
+        <item>Santa Catarina</item>
+        <item>Rio Grande do Norte</item>
+        <item>Rio Grande do Sul</item>
+    </string-array>
+
+    <string name="hello_world">Hello world!</string>
+</resources>

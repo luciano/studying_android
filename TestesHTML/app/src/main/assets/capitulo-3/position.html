@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Position</title>
+</head>
+<body>
+    <header class="cabecalho container">
+        <h2>Position: static, relative, absolute, fixed</h2>
+    </header>
+
+    <section>
+        <p>Existe um conjunto de propriedades que podemos utilizar para posicionar um elemento na página, que são
+        <em>top, left, bottom e right</em>. Porém essas propriedades, por padrão, não são obedecidas por nenhum elemento,
+        pois elas dependem de uma outra propriedade, a position.</p>
+
+        <p>A propriedade position determina qual é o modo de posicionamento de um elemento, e ela pode receber
+        como valor <em>static, relative, absolute ou fixed</em>. Veremos o comportamento de cada um deles, junto com as
+        propriedades de coordenadas.</p>
+
+        <p>O primeiro valor, padrão para todos os elementos, é o <em>static</em>. Um elemento com posição static permanece
+        sempre em seu local original no documento, aquele que o navegador entende como sendo sua posição de
+        renderização. Se passarmos algum valor para as propriedades de coordenadas, eles não serão respeitados.
+        Um dos valores para a propriedade position que aceitamcoordenadas é o <em>relative</em>. Com ele, as coordenadas
+        que passamos são obedecidas em relação à posição original do elemento. Por exemplo:</p>
+        <br><code>
+        .logotipo {<br>
+        &emsp;position: relative; <br>
+        &emsp;top: 20px;<br>
+        &emsp;left: 50px;<br>
+        }<br>
+        <br></code>
+        <p>Os elementos em nosso documento que receberem o valor “logotipo” em seu atributo class terão 20px
+        adicionados ao seu topo e 50px adicionados à sua esquerda em relação à sua posição original. Note que,
+        ao definirmos coordenadas, estamos adicionando pixels de distância naquela direção, então o elemento será
+        renderizado mais abaixo e à direita em comparação à sua posição original.</p>
+
+        <p>O próximo modo de posicionamento que temos é o <em>absolute</em>, e ele é um pouco complexo. Existem algumas
+        regras que alteram seu comportamento em determinadas circunstâncias. Por definição, o elemento que tem
+        o modo de posicionamento <em>absolute</em> toma como referência qualquer elemento que seja seu pai na estrutura
+        do HTML cujo modo de posicionamento seja <em>diferente de static</em> (que é o padrão), e obedece às coordenadas
+        de acordo com o tamanho total desse elemento pai.</p>
+
+        <p>Quando não há nenhum elemento em toda a hierarquia daquele que recebe o posicionamento <em>absolute</em> que
+        seja diferente de <em>static</em>, o elemento vai aplicar as coordenadas tendo como referência a porção visível da
+        página no navegador. Por exemplo:</p>
+
+        <strong>Estrutura HTML</strong><br>
+
+        <code><br>
+            &lt;div class="quadrado">&lt;/div><br>
+            &lt;div class="quadrado absoluto">&lt;/div><br>
+        </code>
+
+        <strong>Estilo CSS</strong><br>
+        <code><br>
+        .quadrado { <br>
+            &emsp;background: green;<br>
+            &emsp;height: 200px;<br>
+            &emsp;width: 200px;<br>
+        }<br>
+
+        <br>
+        .absoluto {<br>
+            &emsp;position: absolute;<br>
+            &emsp;top: 20px;<br>
+            &emsp;right: 30px;<br>
+        }<br>
+        <br></code>
+
+        <p>Seguindo o exemplo acima, o segundo elemento &lt;div>, que recebe o valor “absoluto” em seu atributo class,
+        não tem nenhum elemento como seu “pai” na hierarquia do documento, portanto ele vai alinhar-se ao topo e
+        à direita do limite visível da página no navegador, adicionando respectivamente 20px e 30px nessas direções.
+        Vamos analisar agora o exemplo a seguir:</p>
+
+        <strong>Estrutura HTML</strong><br>
+
+        <code><br>
+
+        &lt;div class="quadrado relativo"><br>
+            &emsp;&lt;div class="quadrado absoluto">&lt;/div><br>
+        &lt;/div><br>
+        <br>
+        </code>
+
+        <strong>Estilos CSS</strong><br>
+
+        <code><br>
+        .quadrado { <br>
+            &emsp;background: green;<br>
+            &emsp;height: 200px;<br>
+            &emsp;width: 200px;<br>
+        }<br>
+        .absoluto {<br>
+            &emsp;position: absolute;<br>
+            &emsp;top: 20px;<br>
+            &emsp;right: 30px;<br>
+        }<br>
+        .relativo {<br>
+            &emsp;position: relative;<br>
+        }<br>
+        </code><br>
+
+        <p>Nesse caso, o elemento que recebe o posicionamento <em>absolute</em> é “filho” do elemento que recebe o posicionamento
+        relative na estrutura do documento, portanto, o elemento <em>absolute</em> vai usar como ponto de
+        referência para suas coordenadas o elemento <em>relative</em> e se posicionar 20px ao topo e 30px à direita da posição
+        original desse elemento.</p>
+        <p>O outro modo de posicionamento, <em>fixed</em>, sempre vai tomar como referência a porção visível do documento
+        no navegador, e mantém essa posição inclusive quando há rolagem na tela. É uma propriedade útil para
+        avisos importantes que devem ser visíveis com certeza.</p>
+
+        <h2>Resumo de Position</h2>
+        <ul>
+            <li><strong>static</strong>
+                <ul>
+                    <li>Sua posição é dada automaticamente pelo fluxo da página: por padrão ele é renderizado logo
+                        após seus irmãos</li>
+                    <li>Não aceita um posicionamento manual (left, right, top, bottom)</li>
+                    <li>O tamanho do seu elemento pai leva em conta o tamanho do elemento static</li>
+                </ul>
+            </li>
+
+            <li><strong>relative</strong>
+                <ul>
+                    <li>Por padrão o elemento será renderizado da mesma maneira que o static</li>
+                    <li>Aceita posicionamento manual</li>
+                    <li>O tamanho do seu elemento pai leva em conta o tamanho do elemento relative, porém sem levar
+                        em conta seu posicionamento. O pai não sofreria alterações mesmo se o elemento fosse static.</li>
+                </ul>
+            </li>
+
+            <li><strong>fixed</strong>
+                <ul>
+                    <li>Uma configuração de posicionamento vertical (left ou right) e uma horizontal (top ou bottom) é
+                        obrigatória</li>
+                    <li>O elemento será renderizado na página na posição indicada: mesmo que ocorra uma rolagem o
+                        elemento permanecerá no mesmo lugar</li>
+                    <li>Seu tamanho não conta para calcular o tamanho do elemento pai, é como se não fosse elemento
+                        filho</li>
+                </ul>
+            </li>
+
+            <li><strong>absolute</strong>
+                <ul>
+                    <li>Uma configuração de posicionamento vertical (left ou right) e uma horizontal (top ou bottom) é
+                        obrigatória</li>
+                    <li>O elemento será renderizado na posição indicada, porém relativa ao primeiro elemento pai cujo
+                        position seja diferente de static ou, se não existir este pai, relativa à página</li>
+                    <li>Seu tamanho não conta para calcular o tamanho do elemento pai</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+</body>
+</html>

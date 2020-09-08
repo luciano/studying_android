@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Pseudo Classes</title>
+        <link rel="stylesheet" href="css/estilo.css">
+    </head>
+    <body>
+        <header>
+            <h2>Pseudo Classes</h2>
+        </header>
+
+        <section>
+            <p>
+            Pegue o seguinte HTML de uma lista de elementos: <br><br>
+
+            <code>
+            &lt;ul><br>
+                &lt;li>Primeiro item&lt;/li><br>
+                &lt;li>Segundo item&lt;/li><br>
+                &lt;li>Terceiro item&lt;/li><br>
+                &lt;li>Quarto item&lt;/li><br>
+            &lt;/ul><br>
+            </code><br>
+
+            E se quisermos estilizar elementos específicos dessa lista? Por exemplo, o primeiro elemento deve ter cor
+            vermelha e o último, azul. Com esse HTML simples, usando apenas os seletors que vimos até agora, será
+            bem difícil.<br>
+            A solução mais comum seria adicionar classes ou IDs no HTML para selecioná-los depois no CSS:<br><br>
+
+            <code>
+            &lt;ul>
+                &lt;li class="primeiro">Primeiro item&lt;/li>
+                &lt;li>Segundo item&lt;/li>
+                &lt;li>Terceiro item&lt;/li>
+                &lt;li class="ultimo">Quarto item&lt;/li>
+            &lt;/ul>
+            </code>
+            </p>
+
+            <p>
+            É fácil agora usar cores diferentes para o primeiro e último itens da lista.
+            Mas essa técnica exigiu alteração no HTML e exige que lembremos de colocar a classe correta, no ponto
+            correto, toda vez que fizermos mudanças nos itens da lista. <br>
+            O CSS tem um recurso chamado de pseudo-classes que são como classes CSS já pré-definidas para nós. É
+            como se o navegador já colocasse certas classes por padrão em certos elementos, cobrindo situações comuns
+            como essa de selecionar o primeiro ou o último elemento.<br>
+            Há duas pseudo-classes do CSS 3 que representamexatamente o primeiro elemento filho de outro (first-child)
+            e o último elemento filho (last-child). Essas classes já estão definidas, não precisamos aplicá-las em nosso
+            HTML e podemos voltar para o HTML inicial:<br><br>
+            <code>
+                &lt;ul><br>
+                &lt;li>Primeiro item&lt;/li><br>
+                &lt;li>Segundo item&lt;/li><br>
+                &lt;li>Terceiro item&lt;/li><br>
+                &lt;li>Quarto item&lt;/li><br>
+                &lt;/ul><br>
+            </code><br>
+            No CSS, podemos usar pseudo-classes quase da mesma forma que usaríamos nossas classes normais. Repare
+            que para diferenciar um tipo do outro, mudou-se o operador de ponto para dois pontos:<br><br>
+
+            <code>
+            li:first-child { <br>
+                &emsp;color: red;<br>
+            }<br>
+            li:last-child {<br>
+                &emsp;color: blue;<br>
+            }<br>
+            </code>
+            </p>
+
+
+            <h2>NTH-CHILD</h2>
+            <p>
+            Um seletor ainda mais genérico do CSS 3 é o <em>:nth-child()</em> que nos permite passar o índice do
+            elemento. Por exemplo, podemos pegar o terceiro item com:<br><br>
+            li:nth-child(3) { color: yellow; }<br><br>
+
+            Porém, o mais interessante é que o <em>nth-child</em> pode receber uma expressão aritmética para indicar
+            quais índices selecionar. É fácil fazer uma lista zebrada, com itens ímpares de uma cor e
+            pares de outra:<br><br>
+            <code>
+            li:nth-child(2n) { color: green; } /* elementos pares */ <br>
+            li:nth-child(2n+1) { color: blue; } /* elementos impares */<br>
+            </code>
+            </p>
+
+        </section>
+
+        <section>
+
+            <h2>Pseudo Classes de Estado</h2>
+
+            <p>
+            Queremos mudar a cor de um link quando o usuário passa o mouse por cima. Ou seja, queremos mudar seu
+            visual a partir de um evento do usuário (no caso, passar o mouse em cima).<br>
+            Uma solução ingênua seria criar um código JavaScript que adiciona uma classe nos links quando o evento
+            de mouseover acontece (e remove a classe no mouseout).<br>
+            Entretanto, o CSS possui excelentes pseudo-classes que representamestados dos elementos e, em especial,
+            uma que representa o momento que o usuário está com o mouse em cima do elemento, a <em>:hover</em>.<br>
+            É como se o navegador aplicasse uma classe chamada <em>hover</em> automaticamente quando o usuário passa o
+            mouse em cima do elemento e depois retirasse a classe quando ele sai. Tudo sem precisarmos controlar isso
+            com JavaScript.<br><br>
+
+            <code>
+            /* seleciona o link no exato momento em que passamos o mouse por cima dele */ <br>
+            a:hover {<br>
+            &emsp;background-color:#FF00FF;<br>
+            }<br>
+            </code>
+
+            Podemos usar hover em todo tipo de elemento, não apenas links. Mas os links ainda têm outras pseudoclasses
+            que podem ser úteis: <br><br>
+            <code>
+            /* seleciona todas as âncoras que têm o atributo "href", ou seja, links */<br>
+            a:link {<br>
+            &emsp;background-color:#FF0000;<br>
+            }<br><br>
+            /* seleciona todos os links cujo valor de "href" é um endereço já visitado */<br>
+            a:visited {<br>
+            &emsp;background-color:#00FF00;<br>
+            }<br><br>
+            /* seleciona o link no exato momento em que clicamos nele */<br><br>
+            a:active {<br>
+            &emsp;background-color:#0000FF;<br>
+            }<br>
+            </code>
+            </p>
+
+        </section>
+
+        <section>
+
+            <h2>Pseudo Elementos</h2>
+
+            <p>
+            Pseudo classes nos ajudam a selecionar elementos com certas características sem termos que colocar uma
+            classe manualmente neles. Porém, o que fazer quando precisamos selecionar certo tipo de conteúdo que nem
+            elemento tem? <br>
+            Exemplo: temos um texto num parágrafo:<br><br>
+            <code>
+            &lt;p>A Caelum tem os melhores cursos!&lt;/p><br>
+            </code><br>
+
+            Queremos dar um estilo de revista ao nosso texto e estilizar apenas a primeira letra da frase com uma fonte
+            maior. Como fazer para selecionar essa letra? A solução ingênua seria colocar um elemento ao redor da letra
+            para podermos selecioná-la no CSS:<br><br>
+
+            <code>
+            &lt;p>&lt;span>A&lt;/span> Caelum tem os melhores cursos!&lt;/p><br>
+            </code><br>
+            HTML confuso e difícil de manter.
+            O CSS apresenta então a ideia de pseudo-elementos. São elementos que não existem no documento mas
+            podem ser selecionados pelo CSS. É como se houvesse um elemento lá!<br>
+
+            Podemos voltar o HTML inicial:<br><br>
+            </p>
+
+            <code>
+            &lt;p>A Caelum tem os melhores cursos!&lt;/p><br>
+            </code>
+
+            E no CSS:<br><br>
+            <code>
+            p:first-letter {<br>
+            &emsp;font-size: 200%;<br>
+            }<br>
+            </code>
+
+            Temos ainda outro pseudo-elemento para selecionar a primeira linha apenas em um texto grande: <br><br>
+            <code>
+            p:first-line {<br>
+            font-style: italic;<br>
+            }<br>
+            </code>
+
+        </section>
+
+        <section>
+
+            <h2>Novos Elementos</h2>
+
+            <p>
+            Há ainda um outro tipo de pseudo-elemento mais poderoso que nos permite gerar conteúdo novo via CSS.
+            Imagine uma lista de links que queremos, visualmente, colocar entre colchetes:<br><br>
+            [ Link 1 ]<br>
+            [ Link 2 ]<br>
+            [ Link 3 ]<br><br>
+            Podemos, claro, apenas escrever os tais colchetes no HTML.Mas será que o conteúdo é semântico? Queremos
+            que esses colchetes sejam indexados pelo Google? Queremos que sejam lidos como parte do texto pelos
+            leitores de tela?<br>
+            Talvez não. Pode ser um conteúdo apenas visual. Podemos gerá-lo com CSS usando os pseudo elementos
+            after e before.<br>
+            O HTML seria simples:<br><br>
+            </p>
+
+            <code>
+            &lt;a href="...">Link1&lt;/a><br>
+            &lt;a href="...">Link2&lt;/a><br>
+            &lt;a href="...">Link3&lt;/a><br><br>
+            </code>
+
+            E no CSS: <br><br>
+
+            <code>
+            a:before {<br>
+            &emsp;content: '[ ';<br>
+            }<br><br>
+
+            a:after {<br>
+            &emsp;content: ' ]';<br>
+            }<br><br>
+            </code>
+
+            <p>
+            Ou ainda, imagine que queremos colocar amensagem (externo) ao lado de todos os links externos da nossa
+            página. Usando pseudo-elementos e seletores de atributo, conseguimos:<br><br>
+            <code>
+            a[href^=http://]:after { <br>
+            &emsp;content: ' (externo)';<br>
+            }<br><br>
+            </code>
+            Isso pega todos os elementos que a que começam com http:// e coloca a palavra externo depois.
+            </p>
+        </section>
+
+    </body>
+</html>

@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="br.com.liugsilva.semfogo.fragment.LoginFragment">
+
+    <EditText
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/et_login_email"
+        android:hint="@string/dados_email"
+        android:layout_marginBottom="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/preto"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp" />
+
+    <EditText
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/et_login_senha"
+        android:hint="senha"
+        android:layout_marginBottom="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/preto"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp" />
+
+    <Button
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/selector_button_app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Entrar"
+        android:textColor="@color/preto"
+        android:textStyle="bold"
+        android:id="@+id/btn_entrar_login" />
+
+</LinearLayout>

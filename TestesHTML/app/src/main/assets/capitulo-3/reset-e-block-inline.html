@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Reset, Block e Inline</title>
+    <link rel="stylesheet" href="css/estilizacao-classes.css">
+    <link rel="stylesheet" href="css/reset.css">
+</head>
+<body>
+    <header class="cabecalho container">
+        <h2>CSS Reset</h2>
+    </header>
+
+    <section>
+        <p>
+            Quando não especificamos nenhum estilo para nossos elementos do HTML, o navegador utiliza uma série
+            de estilos padrão, que são diferentes em cada um dos navegadores. Em um momento mais avançado dos
+            nossos projetos, poderemos enfrentar problemas com coisas que não tínhamos previsto; por exemplo, o
+            espaçamento entre caracteres utilizado em determinado navegador pode fazer com que um texto que, pela
+            nossa definição deveria aparecer em 4 linhas, apareça com 5, quebrando todo o nosso layout.<br>
+            Para evitar esse tipo de interferência, alguns desenvolvedores e empresas criaram alguns estilos que chamamos
+            de CSS Reset. A intenção é setar um valor básico para todas as características do CSS, sobrescrevendo
+            totalmente os estilos padrão do navegador.<br>
+            Desse jeito podemos começar a estilizar as nossas páginas a partir de um ponto que é o mesmo para todos
+            os casos, o que nos permite ter um resultado muito mais sólido em vários navegadores.
+            Existem algumas opções para resetar os valores do CSS.<br>
+            Vamos usar o CSS Reset de Eric Meyer.
+        </p>
+    </section>
+
+    <h2>Block vc Inline</h2>
+
+    <section>
+        <p>
+            Os elementos do HTML, quando renderizados no navegador, podem comportar-se basicamente de duas
+            maneiras diferentes no que diz respeito à maneira como eles interferem no documento como um todo: em
+            <em>bloco (block)</em> ou em <em>linha (inline)</em>.
+        </p>
+        <p>
+            Elementos em bloco são aqueles que ocupam toda a largura do documento, tanto antes quanto depois deles.
+            Entre os elementos em bloco, podemos destacar as tags de heading &lt;h1> a &lt;h6>, os parágrafos &lt;p> e divisões
+        &lt;div>.
+        </p>
+        <p>
+            Elementos em linha são aqueles que ocupam somente o espaço necessário para que seu próprio conteúdo
+            seja exibido, permitindo que outros elementos em linha possam ser renderizados logo na sequência, seja
+            antes ou depois, exibindo diversos elementos nessa mesma linha.<br>
+            Entre os elementos em linha, podemos destacar as tags de âncora &lt;a>, as tags de ênfase &lt;small>, &lt;strong> e
+            &lt;em> e a tag de marcação de atributos &lt;span>.
+        </p>
+        <p>
+            Pode ser interessante alterarmos esse padrão de acordo comnossa necessidade, por isso existe a propriedade
+            display no CSS, que permite denir qual estratégia de exibição o elemento utilizará.<br>
+            Por exemplo, o elemento &lt;li> de uma &lt;ul> tem por padrão o valor block para a propriedade display. Se
+            quisermos os elementos na horizontal, basta alterarmos a propriedade display da &lt;li> para inline:
+            <code><br>
+            ul li {<br>
+            &emsp;display: inline;<br>
+            }<br>
+            </code>
+        </p>
+    </section>
+
+</body>
+</html>

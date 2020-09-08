@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Ex03_Orientacao</string>
+
+    <string name="tv_nome">Digite o nome</string>
+    <string name="action_settings">Settings</string>
+    <string name="btn_adicionar">Adicionar</string>
+</resources>

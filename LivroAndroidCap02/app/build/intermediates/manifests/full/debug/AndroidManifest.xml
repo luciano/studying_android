@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.livro.android.cap2"
+    android:versionCode="1"
+    android:versionName="1.0.0" >
+    <!--
+        package="br.livro.android.cap2" => pacote unico do projeto
+
+        android:versionCode="1" => versao para identificar aplicacao no Google Play
+                                    isto é um contador e controle interno do desenvolvedor
+                                    É interessante mudar esse numero em cada modificacao feita no
+                                    app para ter um controle de quantas vezes foi modificado.
+
+        android:versionName="1.0.0" => Versao em foramto texto para identificar aplicacao
+                                        no Google Play, para exibir ao usuario
+                                        uma nova versao do app vai mostrar um numero novo de versao
+                                        para usuario baixar ou atualizar
+    -->
+    <uses-sdk
+        android:minSdkVersion="4"
+        android:targetSdkVersion="17" />
+
+    <!--
+        android:minSdkVersion="4" => versao minima aceita pelo projeto
+
+        android:targetSdkVersion="17" => este é o target. versao para o qual o build sera
+                                          otimizado. É recomendado ser sempre a versao mais atual
+    -->
+    <!--
+        No arquivo sao usados alguns recursos de imagens e texto
+         Para acessar recurso de um arquivo XML usa notacao @
+         Para acessar recurso de classe Java usa classe R
+
+         Exemplo:
+         @string/hello       arquivo XML
+
+         R.string.hello      pela classe R
+    -->
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!--
+            android:allowBackup="false" => permite backup em cloud ou nao
+
+        android:icon="@drawable/ic_launcher" => icone da aplicacao na tela Home
+
+        android:label="@string/app_name" => nome da aplicacao na tela Home
+
+        android:theme="@style/AppTheme" => tema
+        -->
+
+        <activity
+            android:name="br.livro.android.cap2.PrimeiroExemplo"
+            android:label="@string/app_name" >
+
+            <!--
+             android:name=".PrimeiroExemplo" => nome da activity que deve ser executada
+                                                caminho esta abreviado
+                                                poderia ser br.livro.android.cap2.PrimeiroExemplo
+            -->
+
+
+            <!-- Declara filtro para executar aplicacao -->
+            <intent-filter>
+
+                <!-- A acao MAIN indica que esta activity pode ser executada como a inicial -->
+                <action android:name="android.intent.action.MAIN" />
+
+                <!--
+                     A categoria LAUNCHER indica que esta activity pode ser executada
+                      pelo usuario na tela Home
+                -->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest><!--     Arquivo e um dos principais do projeto pois centraliza as configuracoes da aplicacao -->

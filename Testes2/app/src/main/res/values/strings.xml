@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Testes</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_up_button1">Tela 1</string>
+    <string name="title_activity_up_button2">Tela 2</string>
+    <string name="btn_tela2">Tela 2</string>
+    <string name="stg_tela1">Tela 1\nUsando Up Button para verificar a finalização das activities.</string>
+    <string name="btn_principal">Tela 1</string>
+    <string name="tela2">Tela 2\nUsando Up Button para verificar a finalização das activities.</string>
+
+    <!-- opcoes do array -->
+    <string name="opcao_activity">Activity</string>
+    <string name="opcao_text_view">TextView</string>
+
+    <string name="title_activity_principal">Menu Activity</string>
+    <string name="title_activity_main_text_view">Menu TextView</string>
+    <string name="btn_text_fontes">Fontes</string>
+    <string name="title_activity_fontes">Fontes</string>
+    <string name="title_activity_main_fragment">MainFragmentActivity</string>
+    <string name="title_activity_main_toolbar">MainToolbarActivity</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_container">Container Activity</string>
+
+</resources>

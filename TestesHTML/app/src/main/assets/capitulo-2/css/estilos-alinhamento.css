@@ -1,0 +1,19 @@
+p {
+    text-align: left; /* alinhamento do texto */
+   /* line-height: 5px;  tamanho da altura de cada lina */
+    letter-spacing: 3px; /* tamanho do espaço entre cada letra */
+    word-spacing: 5px; /* tamanho do espaço entre cada palavra */
+    text-indent: 30px; /* tamanho da margem da primeira linha do texto */
+}
+
+h3 {
+    text-style: normal;
+    color: blue;
+    background-image: url(../img/image-backgraund1.png);
+}
+
+body {
+    border-color: red;
+    border-style: solid;
+    border-width: 1px;
+}

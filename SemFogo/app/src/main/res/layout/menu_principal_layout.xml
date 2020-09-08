@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/action_bar_layout" />
+
+    <LinearLayout
+        android:background="@color/branco"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_weight="5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:id="@+id/tv_registrar_ocorrencia"
+            android:text="@string/menu_principal_registrar_ocorrencia"
+            android:textColor="@color/preto"
+            android:textSize="22sp"
+            android:drawableLeft="@drawable/icon_registrar_ocorrencia"
+            android:drawablePadding="30dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+        <include layout="@layout/view_linha_layout" />
+
+        <TextView
+            android:id="@+id/tv_ultimos_registros"
+            android:text="@string/menu_principal_ultimos_registros"
+            android:textColor="@color/preto"
+            android:textSize="22sp"
+            android:drawableLeft="@drawable/icon_ultimos_registros"
+            android:drawablePadding="30dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+        <include layout="@layout/view_linha_layout" />
+
+        <TextView
+            android:id="@+id/tv_como_funciona"
+            android:text="@string/menu_principal_como_funciona"
+            android:textColor="@color/preto"
+            android:textSize="22sp"
+            android:drawableLeft="@drawable/icon_como_funciona"
+            android:drawablePadding="30dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+        <include layout="@layout/view_linha_layout" />
+
+        <TextView
+            android:id="@+id/tv_perfil"
+            android:text="@string/menu_principal_perfil"
+            android:textColor="@color/preto"
+            android:textSize="22sp"
+            android:drawableLeft="@drawable/icon_perfil"
+            android:drawablePadding="30dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+    </LinearLayout>
+
+    <include layout="@layout/empresa_banner_layout" />
+
+</LinearLayout>

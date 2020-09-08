@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">WhatsApp Clear</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Limpar Fotos</string>
+    <string name="action_clear">Limpar Snapchat</string>
+</resources>

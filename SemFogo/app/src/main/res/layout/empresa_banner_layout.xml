@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/empresa_banner"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@drawable/fundo_empresas_banner">
+
+    <LinearLayout
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+
+        <ImageView android:src="@drawable/logo_semfogo"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center"
+            android:tint="@color/color_fogo"
+            android:layout_width="@dimen/action_bar_logo_width"
+            android:layout_height="@dimen/action_bar_logo_height"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:text="para empresas."
+            android:textColor="@color/color_fogo"
+            android:textSize="13sp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp" />
+    </LinearLayout>
+
+    <!-- Implementar esse metodo onde tiver o banner -->
+    <ImageButton
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/button_send_empresas"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="5dp" />
+</LinearLayout>

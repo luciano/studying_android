@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Interatividade Web</title>
+
+    </head>
+    <body>
+        <header class="cabecalho">
+            <h2>Interatividade Web</h2>
+        </header>
+
+        <section>
+            <p>
+                O uso do JavaScript como a principal linguagem de programação da Web só é possível por conta da integração
+            que o navegador oferece para o programador, a maneira com que conseguimos encontrar um elemento da
+            página e alterar alguma característica dele pelo código JavaScript:<br><br>
+
+            <code>
+            var titulo = document.querySelector("#titulo");<br>
+            titulo.textContent = "Agora o texto do elemento mudou!"; <br>
+            </code>
+
+            </p>
+            <p>
+            No exemplo anterior, nós selecionamos um elemento do documento e alteramos sua propriedade textContent.
+            Existem diversasmaneiras de selecionarmos elementos de um documento e de alterarmos suas propriedades.
+            <br>
+            Inclusive é possível selecionar elementos de maneira similar ao CSS, através de seletores CSS:
+            <br><br>
+            <code>
+            var painelNovidades = document.querySelector("section#main .painel#novidades"); <br>
+            painelNovidades.style.color = "red";<br>
+            </code>
+            </p>
+
+            <h3>QuerySelector vs QuerySelectorAll</h3>
+            <p>
+            A função <em>querySelector</em> sempre retorna um elemento, mesmo que o seletor potencialmente
+            traga mais de um elemento, neste caso, apenas o primeiro elemento da seleção será retornado.
+            A função <em>querySelectorAll</em> retorna uma lista de elementos compatíveis como seletor CSS passado
+            como argumento. Sendo assim, para acessarmos cada elemento retornado, precisaremos
+            passar o seu índice conforme o exemplo abaixo:<br>
+
+            <code>
+            var paragrafos = document.querySelectorAll("div p");<br>
+            paragrafos[0].textContent = "Primeiro parágrafo da seleção";<br>
+            paragrafos[1].textContent = "Segundo parágrafo da seleção";<br>
+            </code>
+            </p>
+
+            <p>
+            Apesar de ser interessante a possibilidade de alterar o documento todo por meio do JavaScript, existe um
+            problema com a característica de execução imediata do código. O mais comum é que as alterações sejam
+            feitas quando o usuário executa alguma ação, como por exemplo, clicar em um elemento.
+            Para suprir essa necessidade, é necessário utilizar de dois recursos do JavaScript no navegador. O primeiro é
+            a a criação de <strong>funções</strong>:<br>
+            <code>
+            function mostraAlerta() { <br>
+            &emsp;alert("Funciona!");<br>
+            }<br>
+            </code>
+            </p>
+
+            <p>
+            Ao criarmos uma função, a execução do código simplesmente guarda o que estiver dentro da função, e esse
+            código guardado só será executado quando chamarmos a função. Para exemplificar a necessidade citada
+            acima, vamos utilizar o segundo recurso, os <strong>eventos</strong>:<br>
+            <code><br>
+            // obtendo um elemento através de um seletor de ID<br>
+            var titulo = document.querySelector("#titulo");<br>
+            titulo.onclick = mostraAlerta;<br>
+            </code><br>
+            Note que primeiramente é necessário selecionarumelemento do documento e depois denir o onclick desse
+            elemento como sendo a função.
+            </p>
+            <p>
+            De acordo com os dois códigos acima, primeiramente guardamos um comportamento em uma função. Ao
+            contrário do código fora de uma função, o comportamento não é executado imediatamente, e sim guardado
+            para quando quisermos chamá-lo. Depois informamos que um elemento deve executar aquele comportamento
+            em determinado momento, no caso em um evento “click”.
+            </p>
+            <p>
+            Também é possível chamar uma função em um momento sem a necessidade de um evento, é só utilizar o
+            nome da função abrindo e fechando parênteses, indicando que estamos executando a função que foi definida
+            anteriormente:
+            </p>
+            <code><br>
+            function mostraAlerta() {<br>
+            &emsp;alert("Funciona!");<br>
+            }<br><br>
+            // Chamando a função:<br>
+            mostraAlerta();<br>
+            </code>
+
+            <p>
+            Também é possível determinar, por meio de seus argumentos, que a função vai ter algum valor variável que
+            vamos definir quando quisermos executá-la:<br>
+
+            <code><br>
+            function mostraAlerta(texto) {<br>
+            // Dentro da função "texto" conterá o valor passado na execução.<br>
+            &emsp;alert(texto);<br>
+            }<br><br>
+            // Ao chamar a função é necessário definir o valor do "texto"<br>
+            mostraAlerta("Funciona com argumento!");<br>
+            </code><br>
+
+            Existem diversos eventos que podem ser utilizados para que a interação do usuário coma página seja o ponto
+            de disparo de funções que alteram os elementos da própria página:
+            </p>
+            <ul>
+                <li>onclick: clica com o mouse</li>
+                <li>ondblclick: clica duas vezes com o mouse</li>
+                <li>onmousemove: mexe o mouse</li>
+                <li>onmousedown: aperta o botão do mouse</li>
+                <li>onmouseup: solta o botão do mouse (útil com os dois acima para gerenciar drag’n’drop)</li>
+                <li>onkeypress: ao pressionar e soltar uma tecla</li>
+                <li>onkeydown: ao pressionar uma tecla.</li>
+                <li>onkeyup: ao soltar uma tecla. Mesmo acima.</li>
+                <li>onblur: quando um elemento perde foco</li>
+                <li>onfocus: quando um elemento ganha foco</li>
+                <li>onchange: quando um input, select ou textarea tem seu valor alterado</li>
+                <li>onload: quando a página é carregada</li>
+                <li>onunload: quando a página é fechada</li>
+                <li>onsubmit: disparado antes de submeter o formulário. Útil para realizar validações</li>
+            </ul>
+
+            <p>
+            Existem também uma série de outros eventos mais avançados que permitem a criação de interações para
+            drag-and-drop, e até mesmo a criação de eventos customizados.
+            </p>
+
+            <a href="exemplo/query-selector.html">Exemplo</a>
+        </section>
+    </body>
+</html>

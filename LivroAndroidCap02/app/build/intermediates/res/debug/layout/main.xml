@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello"
+        android:textColor="#000000" />
+
+</LinearLayout>
+
+<!--
+    Este arquivo define a interface grafica da tela.
+
+    Por padrao ao criar o projeto esse arquivo contem uma tag <TextView>
+    para exibir um simples texto na tela. Essa tag define o atributo
+    android:text="@string/hello", que utiliza uma mensagem identificada
+    pela chave hello localizada no arquivo strings.xml
+
+    <TextViem> Responsavel por exibir texto simples na tela. Usando o atributo
+    android:text="Texto ou string" Para escrever ou informar referencia da string com forma
+    @string/nome_string definida no arquivo strings.xml
+
+    As tags <LinearLayout> e <TextView> correspondem as classes LinearLayout e TextView
+    respectivamente. Ambas as classes sao filhas da classe android.view.View do Android.
+
+    A classe LinearLayout é um tipo especial de componente que funciona como um gerenciador
+    de layout e pode conter e organizar outros componentes na tela.
+
+    NOTA: É possivel criar a interface grafica com a API Java ou com arquivos XML
+           com o layout da tela. Para cada tag definida em um arquivo XML existe uma classe
+           correspondente que é filha de android.view.View.
+
+--><!-- From: file:/home/luciano/AndroidStudioProjects/LivroAndroidCap02/app/src/main/res/layout/main.xml -->

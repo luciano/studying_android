@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Seletores de Atributos CSS</title>
+        <link rel="stylesheet" href="css/estilo.css">
+    </head>
+    <body>
+        <header class="cabecalho">
+            <h2>Seletores de Atributos CSS</h2>
+        </header>
+
+        <section>
+            <p>
+                Além dos seletores de tag, classe e id que observamos anteriormente, existe mais uma série de seletores
+            avançados do CSS. </p>
+
+            <p>
+                Um dos seletores CSS mais versáteis é o seletor de atributo, com ele podemos verificar a presença ou valor
+            de um atributo para selecioná-lo. Por exemplo: <br>
+            <code>
+            input[value] { <br>
+            &emsp;color: #cc0000; <br>
+            } <br>
+            </code>
+            </p>
+
+            <p>
+            O seletor acima age em todos os elementos da tag &lt;input> que têm o atributo “value”. Também é possível
+            verificar se o atributo tem um valor específico: <br>
+            <code>
+                input[type="text"] {<br>
+                &emsp;border-radius: 4px;<br>
+            }<br>
+            </code>
+            </p>
+
+            <p>
+            Além de verificar um valor integralmente, é possível utilizar alguns operadores para selecionar valores em
+            determinadas condições, como por exemplo o seletor de atributo com prefixo: <br>
+            <code>
+            div[class|="menu"] { <br>
+            &emsp;border-radius: 4px;<br>
+            }<br>
+            </code><br>
+            O seletor acima vai agir em todas as tags &lt;div> cujo atributo “class” comece com a palavra menu seguida de
+            um hífen e qualquer outro valor na sequência, como por exemplo <strong>menu-principal</strong>, <strong>menu-departamentos</strong>
+            e <strong>menu-teste</strong>.
+            </p>
+
+            <p>
+            Também é possível buscar por uma palavra específica no valor, não importando o valor completo do atributo.
+            Por exemplo:<br>
+            <code>
+            input[value~="problema"] { <br>
+            &emsp;color: #cc0000; <br>
+            }<br>
+            </code><br>
+            O seletor acima agirá sobre todos os elementos da tag &lt;input> que contiverem a palavra “problema” em seu
+            conteúdo.
+            </p>
+
+            <p>
+            Como CSS 3 é possível utilizar novos operadores comsinais que se assemelhamaos das expressões regulares: <br>
+            <code>
+            /* busca por inputs com valor de "name" iniciando em "usuario" */ <br>
+            input[name^="usuario"] { <br>
+                &emsp;color: 99ffcc; <br>
+            } <br><br>
+
+            /* busca por inputs com valor de "name" terminando em "teste" */<br>
+            input[name$="teste"] {<br>
+                &emsp;background-color: #ccff00;<br>
+            }<br><br>
+
+            /* busca por inputs com valor do atributo "name"
+            contendo "tela" em qualquer posição */<br>
+            input[name*="tela"] {<br>
+            &emsp;color: #666666;<br>
+            }<br><br>
+            </code>
+            Os seletores de atributo têm o mesmo valor de especificidade dos seletores de classe.
+            </p>
+        </section>
+
+        <footer class="cabecalho">
+            <h2>Extra: Rodapé</h2>
+            <p>
+                No HTML 5 a tag apropriada para rodapés é a &lt;footer>
+            </p>
+            <h2>Extra: Display Inline-block</h2>
+            <p>
+                Os navegadores mais modernos introduzem um modelo de exibição que é a mistura dos dois display anteriores, <em>block e inline</em>, o
+                <em>inline-block</em>. Os elementos que recebem o valor <em>inline-block</em> para a propriedade display obedecem às
+                especificações de dimensão das propriedades <em>height</em> (altura) e <em>width</em> (largura) e ainda permitem que outros
+                elementos sejam exibidos ao seu lado como elementos <em>inline</em>.<br>
+                <code>
+                .painel li {<br>
+                    &emsp;display: inline-block;<br>
+                    &emsp;vertical-align: top;<br>
+                    &emsp;width: 140px;<br>
+                    &emsp;margin: 2px;<br>
+                    &emsp;padding-bottom: 10px;<br>
+                }<br>
+                </code>
+
+                <br>Como o <em>inline-block</em> faz os elementos se alinharem como numa linha de texto, podemos controlar o alinhamento
+                vertical dessa linha da mesma forma que zemos antes com linhas de texto e imagens simples. Isto é,
+                usando a propriedade <em>vertical-align</em> que, nesse caso, recebeu valor top.
+            </p>
+        </footer>
+    </body>
+</html>

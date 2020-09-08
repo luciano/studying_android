@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Formularios e Clear</title>
+        <link rel="stylesheet" href="css/estilo.css">
+    </head>
+    <body>
+        <header class="cabecalho">
+            <h2>Formularios e Propriedade Clear</h2>
+        </header>
+
+        <section>
+            <p>
+                Em HTML temos um elemento <em>&lt;form></em> criado para capturar
+                os dados do usuário e submetê-lo a algum serviço da internet.
+            </p>
+            <p>
+                Os dados são passados para o <em>&lt;form></em> por meio da tag
+                <em>&lt;input></em> que pode ter dupla finalidade: receber os dados
+                digitados ou submeter o formulario.
+            </p>
+            <p>
+                É por meio da tag <em>type</em> que definimos essa propriedade.
+                A propriedade <em>type</em> aceita:
+            </p>
+            <ul>
+                <li>button</li>
+                <li>checkbox</li>
+                <li>color</li>
+                <li>date</li>
+                <li>datetime</li>
+                <li>datetime-local</li>
+                <li>email</li>
+                <li>file</li>
+                <li>hidden</li>
+                <li>image</li>
+                <li>month</li>
+                <li>number</li>
+                <li>password</li>
+                <li>radio</li>
+                <li>range</li>
+                <li>reset</li>
+                <li>search</li>
+                <li>submit</li>
+                <li>tel</li>
+                <li>text</li>
+                <li>time</li>
+                <li>url</li>
+                <li>week</li>
+            </ul>
+            <p>
+                O tipo image vai ser usado para submeter o formulario, o tipo
+            submit tem mesma finalidade de submeter porem é renderizado como um botão.
+                Exemplo:<br>
+                <code>
+                    &lt;form><br>
+                        &emsp;&lt;input type="search"><br>
+                        &emsp;&lt;input type="image" src="img/busca.png" class="lupa"><br>
+                    &lt;/form><br>
+                </code>
+                <a href="exemplo/formulario.html">Exemplo de Formulário</a>
+            </p>
+
+            <h2>Propriedade Clear</h2>
+
+            <p>
+                A propriedade <em>clear</em> apenas interfere no layout da página
+                caso outros elementos à sua volta estiverem flutuando. <br>
+                A propriedade <em>clear</em> quer dizer "limpe o fluxo do
+                documento ao meu lado" e pode receber os valores <em>left, right e both</em>.
+                O valor <em>left</em> impede que elemntos flutuem à esquerda do elemento que recebe essa
+                propriedade, o <em>right</em> impede elementos à direita e <em>both</em> impede
+                elementos dos dois lados.<br>
+                <a href="exemplo/clear.html">Exemplo de Clear</a>
+            </p>
+        </section>
+
+    </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Funções Temporais</title>
+        <link rel="stylesheet" href="css/estilo.css">
+    </head>
+    <body>
+        <header>
+            <h2>Funções Temporais</h2>
+        </header>
+
+        <section>
+            <p>
+            Em JavaScript, podemos criar um timer para executar um trecho de código após um certo tempo, ou ainda
+            executar algo de tempos em tempos. </p>
+
+            <p>
+            A função <em>setTimeout</em> permite que agendemos alguma função para execução no futuro e recebe o nome da
+            função a ser executada e o número de milissegundos a esperar:
+            </p>
+
+            <p>
+            <code><br><br>
+            // executa a minhaFuncao daqui um segundo<br>
+            setTimeout(minhaFuncao, 1000);<br><br>
+            </code>
+            <br>
+            Se for um código recorrente, podemos usar o <em>setInterval</em> que recebe os mesmos argumentos mas executa
+            a função indenidamente de tempos em tempos:<br>
+            <br>
+            // executa a minhaFuncao de um em um segundo<br>
+            setInterval(minhaFuncao, 1000);<br><br>
+            </p>
+
+            <strong>clearInterval</strong><br>
+
+            As funções temporais devolvemumobjeto que representa o agendamento que foi feito. É possível
+            usá-lo para cancelar a execução no futuro. É especialmente interessante para o caso do interval
+            que pode ser cancelado de sua execução infinita:<br>
+
+            <code><br>
+            // agenda uma execução qualquer<br>
+            var timer = setInterval(minhaFuncao, 1000);<br>
+            <br>
+            // cancela execução<br>
+            clearInterval(timer);<br>
+            </code><br>
+            <a href="exemplo/timer.html">Exemplos</a>
+        </section>
+
+        <section>
+            <h2>Extra: Vários callbacks no mesmo elemento</h2>
+
+            <p>
+            Nos exercícios que trabalhamos com eventos, usamos o onclick e o onsubmit diretamente no elemento que
+            estávamos manipulando:<br>
+
+            <code><br>
+            document.querySelector('#destaque').onclick = function() {<br>
+            // tratamento do evento<br>
+            };<br>
+            </code><br>
+            </p>
+
+            <p>
+            É uma forma fácil e portável de se tratar eventos, mas não muito comum na prática. O maior problema do
+            código acima é que só podemos atrelar uma única função ao evento. Se tentarmos, em outra parte do código,
+            colocar uma segunda função para executar no mesmo evento, ela sobrescreverá a anterior. <br>
+            A maneira mais recomendada de se associar uma função a eventos é com o uso de addEventListener:<br>
+
+                <code><br>
+            document.querySelector('#destaque').addEventListener('click', function() {<br>
+            // tratamento do evento<br>
+            });<br>
+
+            </code><br>
+            Dessamaneira, conseguimos adicionar vários listeners aomesmo evento, deixando o códigomais exível.
+            </p>
+        </section>
+    </body>
+</html>

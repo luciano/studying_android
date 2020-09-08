@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">Cap07-Canvas</string>
+  <string name="jogo_do_riverraid">Jogo do RiverRaid</string>
+  <string name="digite_um_numero">Digite um numero</string>
+  <string name="ok">OK</string>
+</resources>

@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">LivroAndroidCap7-View</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="msg_verde_e_branca">Texto verde e branco</string>
+    <string name="msg_azul_e_branco">Texto azul e branco</string>
+    <string name="msg_vermelho_e_branco">Texto vermelho e branco</string>
+    <string name="texto1">Texto campo 1 azul</string>
+    <string name="title_activity_exemplo_texto_cores">Exemplo Texto Cores</string>
+    <string name="title_activity_exemplo_auto_complete_text_view">
+        ExemploAutoCompleteTextViewActivity
+    </string>
+    <string name="title_activity_exemplo_image_button">ExemploImageButtonActivity</string>
+    <string name="title_activity_exemplo_toggle_button">ExemploToggleButtonActivity</string>
+    <string name="title_activity_exemplo_check_radio_form">ExemploCheckRadioFormActivity</string>
+    <string name="title_activity_exemplo_spinner">ExemploSpinnerActivity</string>
+    <string name="text_combo">Texto combo</string>
+    <string name="title_activity_exemplo_progress_dialog">ExemploProgressDialogActivity</string>
+    <string name="title_activity_exemplo_progress_bar">ExemploProgressBarActivity</string>
+    <string name="title_activity_exemplo_tost">ExemploTostActivity</string>
+    <string name="title_activity_exemplo_alert_dialog">ExemploAlertDialogActivity</string>
+    <string name="title_activity_exemplo_list_view">ExemploListViewActivity</string>
+    <string name="title_activity_exemplo_grid_view">ExemploGridViewActivity</string>
+    <string name="title_activity_exemplo_gallery">ExemploGalleryActivity</string>
+    <string name="title_activity_exemplo_pager_view">ExemploPagerViewActivity</string>
+    <string name="title_activity_exemplo_view_pager_tab_strip">ExemploViewPagerTabStripActivity
+    </string>
+    <string name="title_activity_exemplo_view_pager_title_strip">
+        ExemploViewPagerTitleStripActivity
+    </string>
+    <string name="title_activity_exemplo_image_switcher">ExemploImageSwitcherActivity</string>
+    <string name="title_activity_exemplo_web_view">ExemploWebViewActivity</string>
+    <string name="title_activity_exemplo_touch_screen_view">ExemploTouchScreenViewActivity</string>
+    <string name="title_activity_exemplo_minha_canvas">ExemploMinhaCanvasActivity</string>
+</resources>

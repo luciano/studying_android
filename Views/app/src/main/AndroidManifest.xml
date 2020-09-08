@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="android.teste.arquivos.views" >
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Tema1"
+            android:label="@string/title_activity_tema1"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name=".Tema2"
+            android:label="@string/title_activity_tema2"
+            android:theme="@style/Theme.AppCompat.CompactMenu" >
+        </activity>
+        <activity
+            android:name=".Tema3"
+            android:label="@string/title_activity_tema3"
+            android:theme="@style/Theme.AppCompat.Dialog">
+        </activity>
+        <activity
+            android:name=".Tema4"
+            android:label="@string/title_activity_tema4"
+            android:theme="@style/Theme.AppCompat.Light" >
+        </activity>
+        <activity
+            android:name=".Tema5"
+            android:label="@string/title_activity_tema5"
+            android:theme="@style/Theme.AppCompat.DialogWhenLarge">
+        </activity>
+        <activity
+            android:name=".Tema6"
+            android:label="@string/title_activity_tema6"
+            android:theme="@style/Theme.AppCompat.Dialog.Alert" >
+        </activity>
+        <activity
+            android:name=".Tema7"
+            android:label="@string/title_activity_tema7"
+            android:theme="@style/Theme.AppCompat.Dialog.MinWidth" >
+        </activity>
+        <activity
+            android:name=".Tema8"
+            android:label="@string/title_activity_tema8"
+            android:theme="@style/ThemeOverlay.AppCompat.Light" >
+        </activity>
+        <activity
+            android:name=".Tema9"
+            android:label="@string/title_activity_tema9"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" >
+        </activity>
+        <activity
+            android:name=".Tema10"
+            android:label="@string/title_activity_tema10"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark" >
+        </activity>
+        <activity
+            android:name=".Tema11"
+            android:label="@string/title_activity_tema11"
+            android:theme="@style/ThemeOverlay.AppCompat" >
+        </activity>
+        <activity
+            android:name=".Tema12"
+            android:label="@string/title_activity_tema12"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+        </activity>
+        <activity
+            android:name=".Tema13"
+            android:label="@string/title_activity_tema13"
+            android:theme="@style/Theme.AppCompat.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".Tema14"
+            android:label="@string/title_activity_tema14"
+            android:theme="@style/Theme.AppCompat.Light.Dialog.Alert" >
+        </activity>
+        <activity
+            android:name=".Tema15"
+            android:label="@string/title_activity_tema15" >
+            <!-- android:theme="@style/Base.TextAppearance.AppCompat.Button"  -->
+        </activity>
+        <activity
+            android:name=".Tema16"
+            android:label="@string/title_activity_tema16" >
+            <!-- android:theme="@style/Base.TextAppearance.AppCompat.Caption" -->
+        </activity>
+        <activity
+            android:name=".Tema17"
+            android:label="@string/title_activity_tema17" >
+            <!-- android:theme="@style/Base.TextAppearance.AppCompat.Display1" -->
+        </activity>
+        <activity
+            android:name=".Tema18"
+            android:label="@string/title_activity_tema18" >
+        <!-- android:theme="@style/Base.TextAppearance.AppCompat.Display1" -->
+        </activity>
+        <activity
+            android:name=".Tema19"
+            android:label="@string/title_activity_tema19" >
+    <!-- android:theme="@style/Base.TextAppearance.AppCompat.Display1" -->
+        </activity>
+        <activity
+            android:name=".Tema20"
+            android:label="@string/title_activity_tema20" >
+            <!-- android:theme="@style/Base.TextAppearance.AppCompat.Display1" -->
+        </activity>
+        <activity
+            android:name=".Tema21"
+            android:label="@string/title_activity_tema21" >
+            <!-- android:theme="@style/Base.TextAppearance.AppCompat.Display1" -->
+        </activity>
+        <activity
+            android:name=".Tema22"
+            android:label="@string/title_activity_tema22" >
+            <!-- android:theme="@style/Base.TextAppearance.AppCompat.Display1" -->
+        </activity>
+        <activity
+            android:name=".Tema23"
+            android:label="@string/title_activity_tema23" >
+            <!-- android:theme="@style/Base.TextAppearance.AppCompat.Display1" -->
+        </activity>
+    </application>
+
+</manifest>

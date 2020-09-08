@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Usando classes para Estilizacao</title>
+        <link rel="stylesheet" href="css/estilizacao-classes.css">
+    </head>
+    <body>
+        <header class="cabecalho container">
+            <h2>Estilização com Classes</h2>
+        </header>
+
+        <div class="container">
+        <p>
+            Para podermos estilizar os elementos que criamos, vamos precisar de uma forma de selecionarmos no CSS
+            cada coisa. Já vimos seletor de tag e por ID. Ou seja, pra estilizar nosso menu &lt;nav>, podíamos fazer:
+            <code><br>
+            nav { <br>
+            &emsp;... <br>
+            } <br>
+            </code> <br>
+            Mas imagine que podemos ter muitos NAV na página e queremos ser mais especícos. O ID é uma solução:<br>
+
+            &lt;nav id="menu-opcoes"> <br>
+            &lt;/nav> <br>
+
+            E, no CSS:<br><br>
+
+            #menu-opcoes {<br>
+            &emsp;...<br>
+            }<br>
+            Vamos ver uma terceira forma, no uso de classes. O código é semelhante mas usa o atributo class no HTML
+            e o ponto no CSS:<br>
+            <code>
+                &lt;nav class="menu-opcoes"><br>
+                &lt;/nav><br>
+                <br>
+                E, no CSS:<br><br>
+                .menu-opcoes {<br>
+                &emsp;...<br>
+                }<br>
+            </code>
+        </p>
+
+        <p>
+            Mas quando usar ID ou CLASS? <br>
+            Ambos fariam seu trabalho nesse caso. Mas é bom lembrar que ids são mais fortes, devem ser únicos na
+            página, sempre. Embora esse nosso menu seja único agora, imagine se, no futuro, quisermos ter o mesmo
+            menu em outro ponto da página, mais pra baixo? Usar classes facilita reuso de código e exibilidade.
+            Além disso, um elemento pode ter mais de uma classe ao mesmo tempo, aplicando estilos de várias regras do
+            CSS ao mesmo tempo:<br>
+            <code>
+            &lt;nav class="menu-opcoes menu-cabecalho"><br>
+                &emsp;...<br>
+            &lt;/nav>
+            </code>
+        </p>
+        </div>
+    </body>
+</html>

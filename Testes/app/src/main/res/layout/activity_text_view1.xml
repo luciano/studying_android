@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#ffcffffd">
+
+    <!--Colocando cor de fundo com background.-->
+    <TextView
+        android:text="@string/Text1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="@string/Text2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="Só é possivel colocar um atributo android:text por TextView
+         \nMas como colocar aspas? Sem usar string."
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="@string/Text3"
+        android:textColor="#000000"
+        android:background="#ff54ff9f"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="Vermelho"
+        android:textColor="#ffff0000"
+        android:background="#ff000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="Azul"
+        android:textColor="#0000ff"
+        android:background="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="Verde"
+        android:textColor="#00ff00"
+        android:background="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+   <TextView
+       android:id="@+id/TVtext1"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:text=""  />
+
+</LinearLayout>

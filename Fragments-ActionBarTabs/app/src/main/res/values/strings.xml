@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Fragments-ActionBarTabs</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="fragment_1">Fragment 1</string>
+    <string name="fragment_2">Fragment 2</string>
+    <string name="fragment_3">Fragment 3</string>
+
+</resources>

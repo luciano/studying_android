@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Substituição por Imagem</title>
+        <link rel="stylesheet" href="css/estilo.css">
+    </head>
+    <body>
+        <header class="cabecalho">
+            <h2>Substituição por Imagem</h2>
+        </header>
+
+        <section class="container">
+            <p>
+                Um truque muito usado em CSS é o chamado Image Replacement -- ou substituição por imagem. Serve
+            para, usando técnicas de CSS, exibir uma imagem em algum elemento que originalmente foi feito comtexto.
+            Perfeito para nosso caso dos ícones das redes sociais.
+            </p>
+
+            <p>A ideia básica é: </p>
+
+            <ul>
+                <li>Acertar o tamanho do elemento para ficar igual ao da imagem</li>
+                <li>Colocar a imagem como background do elemento</li>
+                <li>Esconder o texto</li>
+            </ul>
+
+            <p>
+            Para esconder o texto, é comum usar a tática de colocar um text-indent negativo bastante alto. Isso, na
+            prática, faz o texto ser renderizado “fora da tela”. <br>
+            <code>
+            .facebook { <br>
+            /* tamanho do elemento = imagem */ <br>
+                &emsp;height: 55px;<br>
+                &emsp;width: 85px; <br><br>
+            /* imagem como fundo */ <br>
+                &emsp;background-image: url(../img/facebook.png); <br>
+            /* retirando o texto da frente */ <br>
+            &emsp;text-indent: -9999px;<br>
+            }<br><br>
+            </code>
+            </p>
+        </section>
+        <footer class="container social">
+            <ul>
+                <li><a href="https://www.facebook.com">Facebook</a></li>
+                <li><a href="https://www.twitter.com">Twitter</a></li>
+                <li><a href="https://www.plus.google.com">Google+</a></li>
+            </ul>
+        </footer>
+    </body>
+</html>

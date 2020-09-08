@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/color_vermelho"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/color_vermelho"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="3">
+
+        <ImageView
+            android:src="@drawable/logo"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:layout_width="160dp"
+            android:layout_height="200dp" />
+
+        <TextView
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/branco"
+            android:text="@string/slogan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <FrameLayout android:background="@color/color_vermelho_baixo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View android:background="@color/color_vermelho"
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+
+        <Button
+            android:layout_gravity="center"
+            android:background="@drawable/selector_button_app"
+            android:padding="15dp"
+            android:textColor="@color/preto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/acessar_app"
+            android:id="@+id/btn_chamar_menu_principal" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@color/color_vermelho_baixo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:id="@+id/btn_facebook"
+            android:background="@drawable/selector_button_sociais"
+            android:src="@drawable/facebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+
+        <ImageButton
+            android:id="@+id/btn_instagram"
+            android:background="@drawable/selector_button_sociais"
+            android:src="@drawable/instagram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+
+        <ImageButton
+            android:id="@+id/btn_linkedin"
+            android:background="@drawable/selector_button_sociais"
+            android:src="@drawable/linkedin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Ex02_Activity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="btn_toast">Exibir Toast</string>
+    <string name="btn_outro">Segundo Botão</string>
+    <string name="btn_tela2">Tela 2</string>
+    <string name="btn_tela2_parcelable">Tela 2 Parceble</string>
+    <string name="btn_tela2_serializable">Tela 2 Serializable</string>
+    <string name="title_activity_tela2">Tela2Activity</string>
+</resources>

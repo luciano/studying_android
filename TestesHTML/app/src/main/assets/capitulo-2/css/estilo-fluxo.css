@@ -1,0 +1,22 @@
+#titulo {
+    color: #303F9F;
+    border-bottom: 2px solid #727272;
+    font-style: italic;
+}
+
+#container p {
+    text-align: center;
+    text-indent: 5px;
+}
+
+#figura-1 {
+    float: right;
+    margin: 10px;
+    border: 2px solid #cccccc;
+}
+
+#figura-2 {
+    float: left;
+    margin 10px;
+    border: 2px solid #cccccc;
+}

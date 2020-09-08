@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="dominando.android.hotel.ex20_provider" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="dominando.android.hotel.ex20_provider.HotelActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="dominando.android.hotel.ex20_provider.HotelDetalheActivity"
+            android:label="@string/title_activity_hotel_detalhe"
+            android:parentActivityName="dominando.android.hotel.ex20_provider.HotelActivity" >
+
+            <!-- Para funcionar em android anterior ao 4.0 -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="dominando.android.hotel.ex20_provider.HotelActivity" />
+        </activity>
+
+        <provider
+            android:name="dominando.android.hotel.ex20_provider.HotelProvider"
+            android:authorities="dominando.android.hotel"
+            android:enabled="true"
+            android:exported="true" >
+        </provider>
+    </application>
+
+</manifest>

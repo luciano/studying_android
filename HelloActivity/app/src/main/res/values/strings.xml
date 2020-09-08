@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Hello Activity</string>
+
+    <string name="usuario">Usuario</string>
+    <string name="senha">Senha</string>
+    <string name="login">LOGIN</string>
+    <string name="action_settings">Settings</string>
+</resources>

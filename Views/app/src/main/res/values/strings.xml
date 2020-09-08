@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Themes</string>
+
+    <string name="title_activity_tema1">Theme.AppCompat</string>
+    <string name="title_activity_tema2">Tema2</string>
+    <string name="title_activity_tema3">Tema3</string>
+    <string name="title_activity_tema4">Tema4</string>
+    <string name="title_activity_tema5">Tema5</string>
+    <string name="title_activity_tema6">Tema6</string>
+    <string name="title_activity_tema7">Tema7</string>
+    <string name="title_activity_tema8">Tema8</string>
+    <string name="title_activity_tema9">Tema9</string>
+    <string name="title_activity_tema10">Tema10</string>
+    <string name="title_activity_tema11">Tema11</string>
+    <string name="title_activity_tema12">Tema12</string>
+    <string name="title_activity_tema13">Tema13</string>
+    <string name="title_activity_tema14">Tema14</string>
+    <string name="title_activity_tema15">Tema15</string>
+    <string name="title_activity_tema16">Tema16</string>
+    <string name="title_activity_tema17">Tema17</string>
+    <string name="title_activity_tema18">Tema18</string>
+    <string name="title_activity_tema19">Tema19</string>
+    <string name="title_activity_tema20">Tema20</string>
+    <string name="title_activity_tema21">Tema21</string>
+    <string name="title_activity_tema22">Tema22</string>
+    <string name="title_activity_tema23">Tema23</string>
+
+</resources>

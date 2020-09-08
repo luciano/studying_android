@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo_empresas">
+
+    <!-- ActionBar personalizada -->
+    <include layout="@layout/action_bar_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:padding="15dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/empresas"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/color_fogo"
+                android:typeface="monospace" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/empresas_lema"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/branco"
+                android:layout_marginBottom="25dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/empresas_descricao"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:textColor="@color/branco"
+                android:layout_marginBottom="20dp"
+                android:textAlignment="textStart" />
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <!--android:paddingLeft="25dp"
+                android:paddingRight="25dp" -->
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="@string/empresas_contato"
+                        android:layout_gravity="center"
+                        android:textColor="@color/branco"
+                        android:textSize="20dp" />
+
+                    <ImageView android:src="@drawable/logo_semfogo"
+                        android:scaleType="fitStart"
+                        android:layout_gravity="center"
+                        android:tint="@color/color_fogo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp" />
+                </LinearLayout>
+
+                <EditText
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/et_empresa_nome"
+                    android:hint="Nome"
+                    android:background="@color/branco"
+                    android:layout_marginBottom="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="#000000"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp" />
+
+                <EditText
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:ems="10"
+                    android:id="@+id/et_empresa_email"
+                    android:hint="@string/dados_email"
+                    android:background="@color/branco"
+                    android:layout_marginBottom="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="#000000"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp" />
+
+                <EditText
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:ems="10"
+                    android:id="@+id/et_empresa_telefone"
+                    android:hint="@string/dados_telefone"
+                    android:background="@color/branco"
+                    android:layout_marginBottom="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="#000000"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp" />
+                <EditText
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPostalAddress"
+                    android:ems="10"
+                    android:id="@+id/et_empresa_endereco"
+                    android:hint="@string/dados_cidade"
+                    android:background="@color/branco"
+                    android:layout_marginBottom="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="#000000"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp" />
+                <EditText
+                    android:maxHeight="150dp"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine|textCapSentences"
+                    android:ems="10"
+                    android:id="@+id/et_empresa_mensagem"
+                    android:hint="@string/dados_mensagem"
+                    android:background="@color/branco"
+                    android:layout_marginBottom="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="#000000"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp" />
+
+                <!-- Implementar esse metodo de enviar dados -->
+                <ImageButton
+                    android:id="@+id/ib_enviar_dados_empresa"
+                    android:layout_gravity="right"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/button_send_empresas"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#009793"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Texto da Tab 3" />
+
+</LinearLayout><!-- From: file:/home/luciano/AndroidStudioProjects/LivroAndroidCap06-Layout/app/src/main/res/layout/tab3.xml -->

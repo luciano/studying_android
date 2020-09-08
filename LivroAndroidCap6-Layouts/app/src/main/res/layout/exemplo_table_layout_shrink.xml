@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:shrinkColumns="2" >
+
+    <!--
+        O shrinkColumns recebe o numero das colunas que é preciso contrair
+        ou seja, forçar o conteudo da coluna para ficar dentro da tabela.
+        Força o conteudo a caber, se precisar ele quebra linhas automaticamente
+        -->
+
+    <TableRow>
+        <TextView android:text="Coluna 1" />
+        <TextView android:text="Coluna 2" />
+    </TableRow>
+
+    <TableRow>
+        <TextView android:text="Coluna 1" />
+        <TextView android:text="Coluna 2" />
+        <TextView android:text="Texto grande que vai sair da tela mas o shrinkColumns=2 foi utilizado para quebrar linhas." />
+    </TableRow>
+
+    <TableRow>
+        <TextView android:text="Coluna 1" />
+        <TextView android:text="Coluna 2" />
+        <TextView android:text="Coluna 3" />
+    </TableRow>
+
+</TableLayout>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Usando CSS</title>
+        <style>
+            h3 {
+                background-color: yellow;
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Usando CSS</h2>
+        <p>Antigamenta para <em>customizar o design dos elementos</em> da pagina devia
+        fazer isso no proprio HTML. Porem isso é má prática hoje e jamais deve ser usado. <br>
+        <font color="blue">Exemplo de texto em azul e  vermelho usando <code>&lt;font></code> no próprio HTML</font>,
+        <font color="red">é má prática fazer isso.</font>
+        </p>
+
+        <p>Para fazer isso surgiu o <strong>CSS</strong> que é outra  linguagem separada do
+        HTML com objetivo unico de cuidar da estilização da pagina.</p>
+
+        <h2>Sintaxe do CSS</h2>
+        <p>A sintaxe do CSS tem estrutura simples: é declaração de propriedades e valores
+        por um sinal de dois pontos ":" e cada propriedade é separada por um sinal de ponto
+        e virgula ";" conforme o exemplo:<br><br>
+        <code>
+        background-color: yellow; <br>
+        color: blue; <br><br>
+        </code>
+        O elemento que receber essas propriedade será exibido com texto na cor azul e fundo
+        amarelo.</p>
+        <p> Essas propriedades do CSS podem ser declaradas de três maneiras distintas</p>
+
+        <h2>Atributo style</h2>
+        <p>O atributo style pode ser colocado no próprio elemento. Exemplo:<br><br>
+            <code>
+            &lt;p style="color: blue; background-color:yellow;"> <br>
+            O contúdo desta tag será exibido em azul com fundo amarelo no navegador! <br>
+            &lt;/p> <br>
+            </code>
+            <br><br>
+            Colocando em prática:
+        </p>
+
+        <p style="color: blue; background-color:yellow;">
+        O contúdo desta tag será exibido em azul com fundo amarelo no navegador!
+        </p>
+        <p>Por ser colocada também dentro do HTML esse modo deve ser evitado.</p>
+
+        <h2>A TAG style</h2>
+        <p>Podemos declarar as propriedades dentro da tag <code>style</code>.
+        E precisamos indicar de alguma maneira a qual elemento nos referimos. Fazemos
+        isso utilizando um <strong>seletor CSS</strong>. É basicamente uma forma de buscar
+        certos elementos dentro da página que receberão as regras visuais que queremos.</p>
+
+        <p>No exemplo usaremos o seletor de <code>h3</code> para nao quebrar as tags <code>p</code> feitas anteriormnete
+        e serão definidos no <code>&lt;head></code>:</p>
+
+        <p><code>
+            &lt;style> <br>
+                h3 { <br>
+                    background-color: yellow; <br>
+                    color: blue; <br>
+                }<br>
+            &lt;/style> <br>
+        </code></p>
+
+        <h3>
+            O código anterior da tag <code>&lt;style></code> indica que estamos alterando a cor e o fundo de todos os elementos com
+            tag <code>h3</code>. Dizemos que selecionamos esses elementos pelo nome de sua tag, e aplicamos certas propriedades CSS
+            apenas neles.
+        </h3>
+    </body>
+</html>

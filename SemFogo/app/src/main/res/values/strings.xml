@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">Sem Fogo</string>
+
+    <string name="texto_detalhes">Informe sobre a sua localização:</string>
+    <string name="btn_gerar_localizacao">Minha Localização</string>
+    <string name="btn_enviar">Enviar</string>
+    <string name="edt_informacao_add">Informações adicionais...</string>
+    <string name="title_activity_menu">Menu de Opções</string>
+    <string name="registrar_ocorrencia">Clique no botão abaixo e através do GPS de seu aparelho permita que o aplicativo possa registrar sua localização com a maior precisão possível. Caso necessário, forneça informações clicando no botão informações adicionais.</string>
+    <string name="title_activity_registrar_ocorrencia">Registrar Ocorrência</string>
+
+    <!-- Como funciona -->
+    <string name="como_funciona">COMO FUNCIONA</string>
+    <string name="como_funciona_um">Faça o download do aplicativo e cadastre-se, é rapidinho, leva apenas alguns segundos.</string>
+    <string name="como_funciona_dois">Ao se deparar com algum foco de incêndio, abra o aplicativo, ative o GPS de seu smartphone caso o mesmo esteja desabilitado, e em seguida clique em registrar ocorrência.</string>
+    <string name="como_funciona_tres">O aplicativo irá registrar sua geolocalização automaticamente. Em seguida insira informações adicionais e fotos caso possível para anexar ao seu registro, e envie sua ocorrência.</string>
+    <string name="como_funciona_tres_fig">Serviço de Localização</string>
+    <string name="como_funciona_quatro">Pronto! Localizaremos a unidade de corpo de bombeiros mais próxima e entraremos em contato o mais rápido possível via central telefônica, SMS e email, informando o novo registro com as coordenadas e informações adicionais fornecidas por você.</string>
+    <string name="como_funciona_cinco">Obrigado por sua colaboração! Incentive seus familiares e amigos, vamos juntos contribuir por um mundo melhor.
+        Quem cuida do planeta está cuidando da vida e garantindo o futuro de novas gerações.
+    </string>
+
+    <!-- Sobre -->
+    <string name="sobre">SOBRE</string>
+    <string name="sobre_descricao">
+        Sem Fogo, é uma startup brasileira, com localização no estado de Minas Gerais.\n\n
+
+        Nosso objetivo é auxiliar através da tecnologia no combate e prevenção de incêndios em território nacional, contribuindo
+        de forma rápida para a chegada mais precisa das coordenadas e informações aos corpos de bombeiros e organizações, ajudando
+        a preservar nosso maior bem, a vida.
+    </string>
+
+    <!-- Beneficios -->
+    <string name="beneficios">BENEFÍCIOS</string>
+    <string name="beneficios_um">Preservação da vida e do meio ambiente;</string>
+    <string name="beneficios_dois">Dinamização da comunicação;</string>
+    <string name="beneficios_tres">Apoio para tomada de decisões;</string>
+    <string name="beneficios_quatro">Monitoramento e controle de propriedades e organizações;</string>
+
+    <!-- Empresas -->
+    <string name="empresas">Empresas</string>
+    <string name="empresas_lema">Prevenção aliada a tecnologia.</string>
+    <string name="empresas_descricao">
+        Realizamos o mapeamento de toda área pertencente a sua organização.
+        Nosso aplicativo pode ser utilizado por qualquer funcionário, departamento, setor e direção, que interligados por central própria permitem o monitoramento e controle dos registros realizados em área de sua responsabilidade.
+        Disponibilizamos diversos relatórios gerenciais e a possibilidade de exportação, integração e sincronismo dos dados.
+    </string>
+    <string name="empresas_contato">Entre em contato</string>
+
+    <!-- Perfil -->
+    <string name="perfil">PERFIL</string>
+    <string name="perfil_descricao">Dados pessoais complementares para cadastro em banco de dados. Obrigado por fazer parte desta corrente.</string>
+    <string name="cadastro">CADASTRO</string>
+
+    <!-- Dados -->
+    <string name="dados_nome">Nome Completo</string>
+    <string name="dados_email">E-mail</string>
+    <string name="dados_telefone">Telefone</string>
+    <string name="dados_cidade">Cidade</string>
+    <string name="dados_mensagem">Mensagem</string>
+
+    <!-- Registro -->
+    <string name="registro">Registro</string>
+    <string name="registro_descricao">
+        O aplicativo irá registrar sua localização mais precisa automaticamente. Em seguida insira informações adicionais e fotos caso possível para
+        anexar ao seu registro e envie sua ocorrência.
+    </string>
+
+    <!-- Ultimos Registros -->
+    <string name="ultimos_registros">Últimos Registros</string>
+    <string name="ultimos_registros_decricao">Aqui você encontrará os últimos registros realizados, seguido de todas as informações relacionadas.</string>
+
+    <!-- Info -->
+    <string name="info_latitude">Latitude</string>
+    <string name="info_longitude">Longitude</string>
+    <string name="info_localizacao">Localização</string>
+    <string name="info_horario">Horário</string>
+
+    <string name="slogan">Aplicativo para minimização a riscos</string>
+
+    <!-- Facebook API -->
+    <string name="facebook_app_id">579953365485188</string>
+    <string name="title_activity_empresas">EmpresasActivity</string>
+    <string name="title_activity_funcionamento">FuncionamentoActivity</string>
+    <string name="title_activity_perfil">PerfilActivity</string>
+    <string name="title_activity_ultimos_registros">UltimosRegistrosActivity</string>
+
+    <string name="acessar_app">Acessar App</string>
+
+    <!-- Menu -->
+    <string name="menu_principal_registrar_ocorrencia">Registrar Ocorrência</string>
+    <string name="menu_principal_ultimos_registros">Últimos Registros</string>
+    <string name="menu_principal_como_funciona">Como Funciona</string>
+    <string name="menu_principal_perfil">Perfil</string>
+
+</resources>

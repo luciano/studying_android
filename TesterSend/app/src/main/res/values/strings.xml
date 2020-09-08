@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Tester Send</string>
+
+    <string name="msg_bb">
+        BB informa	:	Compra	em	Razão Social	,	cartao de debito	,	Final Numero	,	RS	90	,	23	,	em 	DATA	.														Saldo c/c:	RS	Valor	,	cent	C ou D
+    </string>
+    <string name="msg_bb_dois">
+        BB informa	:	Saque	em													DATA	.	as	HORA	,	RS	Valor	,	cent	,						Saldo c/c:	RS	Valor	,	cent	C ou D
+    </string>
+    <string name="msg_bb_tres">
+        BB informa	:	agendado	em													DATA	.	as	HORA	,	RS	Valor	,	cent	,	LOCAL	pagamento de titulo do banco	Num	para o dia	DATA
+    </string>
+    <string name="msg_bb_four">
+        BB avisa	:	compra		Razão Social	,	cartao final		FINAL NUMERO	,	RS	90	,	23		-	DIA/MÊS		-	HORA	.							CASO QUEIRA BLOQUAR O CAR				Lim disp	RS	Valor
+    </string>
+
+    <string name="msg_caixa_um">
+        CAIXA informa	:	Envio de TEV	,							RS	160	,	0	, 		DATA		as	HORA	,		AUTO-ATENDIMENTO					DUVIDAS .....
+    </string>
+    <string name="msg_caixa_dois">
+        CAIXA informa	:	Saque		com 		cartao de debito	,		,		900	,	conta		****	DATA		as	HORA	,		AUTO-ATENDIMENTO					DUVIDAS .....
+    </string>
+
+</resources>

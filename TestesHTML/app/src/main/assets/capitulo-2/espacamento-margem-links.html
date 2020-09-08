@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Espaçamento Margem e Links</title>
+        <link rel="stylesheet" href="css/estilo-margem.css">
+    </head>
+    <body>
+
+        <h2 id="top">Padding</h2>
+
+        <p>
+            Padding é utilizada para definnir uma margem interna em alguns elementos e tem as
+            subpropriedades listadas:
+        </p>
+        <ul>
+            <li>padding-top</li>
+            <li>padding-right</li>
+            <li>padding-bottom</li>
+            <li>padding-left</li>
+        </ul>
+        <p>
+            Essas propriedades aplicam uma distância entre o limite do elemento e seu conteudo.
+            Podemos definir todos os valores das subpropriedades usando uma unica. <br>
+            <br>Se passarmos somente um valor esse valor vai ser aplicado a todas as direções:
+            <br><code>
+                p { <br>
+                    padding: 10px; <br>
+                } <br>
+            </code>
+        </p>
+        <p>
+            Se passados dois valores, o primeiro será aplicado acima e abaixo (equivalente a passar o mesmo valor para
+            padding-top e padding-bottom) e o segundo será aplicado à direita e à esquerda (equivalente ao mesmo
+            valor para padding-right e padding-left).
+            <br><code>
+            p { <br>
+                padding: 10px 15px; <br>
+            } <br>
+            </code>
+        </p>
+        <p>Se passados três valores, o primeiro será aplicado acima (equivalente a padding-top), o segundo será aplicado
+            à direita e à esquerda (equivalente a passar o mesmo valor para padding-right e padding-left) e o terceiro
+            valor será aplicado abaixo do elemento (equivalente a padding-bottom)
+            <br><code>
+            p { <br>
+                padding: 10px 20px 15px; <br>
+            } <br>
+            </code>
+        </p>
+        <p>
+            Se passados quatro valores, serão aplicados respectivamente a padding-top, padding-right,
+            padding-bottom e padding-left. Para facilitar a memorização dessa ordem, basta lembrar que os
+            valores são aplicados em sentido horário.
+            <br><code>
+            p { <br>
+                padding: 10px 20px 15px 5px; <br>
+            } <br>
+            </code>
+        </p>
+
+        <h2>Margin</h2>
+
+        <p>
+            A propriedade margin é bem parecida com a propriedade padding, exceto que ela adiciona espaço após o
+            limite do elemento, ou seja, é um espaçamento além do elemento em si. Além das subpropriedades listadas
+            a seguir, há a shorthand property margin que se comporta da mesma maneira que a shorthand property do
+            padding vista no tópico anterior. <br>
+        </p>
+        <ul>
+            <li>margin-top </li>
+            <li>margin-right</li>
+            <li>margin-bottom</li>
+            <li>margin-left</li>
+        </ul>
+        <p>
+            Há ainda uma maneira de permitir que o navegador dena qual será a dimensão da propriedade padding ou
+            margin conforme o espaço disponível na tela: denimos o valor auto para a margem ou o espaçamento que
+            quisermos. <br>
+            No exemplo a seguir, denimos que um elemento não tem nenhuma margem acima ou abaixo de seu conteúdo
+            e que o navegador dene uma margem igual para ambos os lados de acordo com o espaço disponível:
+            <br><code>
+            p { <br>
+                margin: 0 auto;<br>
+            }<br>
+            </code>
+        </p>
+
+        <h2>Dimensões</h2>
+        <p>
+            É possível determinar as dimensões de um elemento, por exemplo:
+            <br><code>
+            p { <br>
+                background-color: red; <br>
+                height: 300px; <br>
+                width: 300px; <br>
+            } <br>
+            </code>
+        </p>
+
+        <h2 id="link">Links</h2>
+
+        <p>
+            Quando precisamos indicar que um trecho de texto se refere a um outro conteúdo, seja ele no mesmo documento
+            ou em outro endereço, utilizamos a tag de âncora &lt;a>. <br>
+            Existem dois diferentes usos para as âncoras. Um deles é a denição de links: <br>
+
+            <code>
+            &lt;p><br>
+                Visite o site da &lt;a href="http://www.caelum.com.br">Caelum&lt;/a>.<br>
+            &lt;/p><br>
+            </code>
+
+            <br>Note que a âncora está demarcando apenas a palavra “Caelum” de todo o conteúdo do parágrafo exempli-
+            cado. Isso signica que, ao clicarmos como cursor domouse na palavra “Caelum”, o navegador redirecionará
+            o usuário para o site da Caelum, indicado no atributo href.<br>
+            <br>Outro uso para a tag de âncora é a demarcação de destinos para links dentro do próprio documento, o que
+            chamamos de bookmark.<br>
+            <code>&lt;p>Mais informações &lt;a href="#info">aqui&lt;/a>.&lt;/p><br></code>
+            <code>&lt;p>Conteúdo da página...&lt;/p><br></code>
+            <code>&lt;h2 id="info">Mais informações sobre o assunto:&lt;/h2><br></code>
+            <code>&lt;p>Informações...&lt;/p><br></code>
+            <br>De acordo com o exemplo acima, ao clicarmos sobre a palavra “aqui”, demarcada com um link, o usuário
+            será levado à porção da página onde o bookmark “info” é visível. Bookmark é o elemento que tem o atributo
+            id.
+        </p>
+        <a href="#top">Subir ao Top</a>
+        <a href="#link">Links</a>
+        <a href="http://www.jw.org">jw.org</a>
+    </body>
+</html>

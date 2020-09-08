@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:text="@string/Title1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/ETcampo1"
+        android:textColor="#ffff0000"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp" />
+    <EditText
+        android:id="@+id/ETcampo2"
+        android:numeric="integer"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp" />
+    <EditText
+        android:id="@+id/ETcampo3"
+        android:numeric="decimal"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp" />
+    <EditText
+        android:id="@+id/ETcampo4"
+        android:password="true"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp" />
+    <EditText
+        android:id="@+id/ETcampo5"
+        android:hint="Digite um texto"
+        android:textColor="#ffff00ff"
+        android:textColorHint="#ff000000"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp" />
+    <EditText
+        android:id="@+id/ETcampo6"
+        android:singleLine="true"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp" />
+
+</LinearLayout>

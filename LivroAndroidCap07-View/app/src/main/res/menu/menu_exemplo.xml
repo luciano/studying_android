@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!--
+	MenuItem item = menu.add(0, NOVO, 0, "Novo");
+	item.setIcon(br.livro.android.cap7.R.drawable.novo);
+	item = menu.add(0, SALVAR, 0, "Salvar");
+	item.setIcon(br.livro.android.cap7.R.drawable.salvar);
+	item = menu.add(0, EXCLUIR, 0, "Excluir");
+	item.setIcon(br.livro.android.cap7.R.drawable.excluir);
+    -->
+    <item
+        android:id="@+id/menu_novo"
+        android:icon="@drawable/novo"
+        android:showAsAction="always" 
+        android:title="Novo"/>
+
+    <item
+        android:id="@+id/menu_salvar"
+        android:icon="@drawable/salvar"
+        android:showAsAction="always"
+        android:title="Salvar"/>
+
+    <item
+        android:id="@+id/menu_excluir"
+        android:icon="@drawable/excluir"
+        android:showAsAction="always"
+        android:title="Excluir"/>
+
+</menu>

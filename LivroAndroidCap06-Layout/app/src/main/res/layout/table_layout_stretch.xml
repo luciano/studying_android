@@ -1,0 +1,67 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="0,1" >
+
+    <!-- O atributo faz com que
+         a coluna desejada ocupe um espaco maior na tela
+         ou o espaco inteiro restante se for apenas uma a coluna
+         com o atributo por causa disso é possivel posicionar
+         os componetes no centro ou a esquerda pois eles
+         ganharam mais espaco para isso-->
+    <TextView android:text="Lista de Produtos" />
+
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+
+    <TableRow>
+
+        <TextView android:text="Produto A"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_gravity="center"
+            android:text="R$100,00" />
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView android:text="Produto B" />
+
+        <TextView
+            android:layout_gravity="right"
+            android:text="R$200,00" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView android:text="Produto C" />
+
+        <TextView
+            android:layout_gravity="right"
+            android:text="R$300,00" />
+    </TableRow>
+
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="bottom" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:text="  Cancelar  " />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:text="  Comprar  " />
+    </LinearLayout>
+
+</TableLayout>

@@ -1,0 +1,31 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+In LivroAndroidCap18-Sms:
+* AndroidManifest.xml => livroAndroidCap18Sms/src/main/AndroidManifest.xml
+* res/ => livroAndroidCap18Sms/src/main/res/
+* src/ => livroAndroidCap18Sms/src/main/java/
+In LivroAndroidCap09-BroadcastReceiver:
+* AndroidManifest.xml => livroAndroidCap09BroadcastReceiver/src/main/AndroidManifest.xml
+* res/ => livroAndroidCap09BroadcastReceiver/src/main/res/
+* src/ => livroAndroidCap09BroadcastReceiver/src/main/java/
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

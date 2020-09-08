@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">LivroAndroidCap6-Layouts</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_layout">Layouts</string>
+    <string name="nome">Nome:</string>
+    <string name="ok">OK</string>
+    <string name="content_description">Usando descrição de imagens para aplicativos que tem reconhecimento para deficientes visuais.</string>
+</resources>

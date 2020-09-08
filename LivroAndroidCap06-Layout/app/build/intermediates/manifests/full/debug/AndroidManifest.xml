@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.livro.android.cap6"
+    android:versionCode="1"
+    android:versionName="1.0.0" >
+
+    <uses-sdk
+        android:minSdkVersion="4"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="br.livro.android.cap6.Menu"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="br.livro.android.cap6.MenuLayouts" />
+        <activity android:name="br.livro.android.cap6.MenuLayouts2" />
+        <activity android:name="br.livro.android.cap6.MenuBasicoLayouts" />
+        <activity android:name="br.livro.android.cap6.ActivityLayoutIdGenerica" />
+        <activity android:name="br.livro.android.cap6.layout.api.ExemploLinearLayoutAPI" />
+        <activity android:name="br.livro.android.cap6.layout.api.ExemploTableLayoutAPI" />
+        <activity android:name="br.livro.android.cap6.layout.ExemploScrollView" />
+        <activity android:name="br.livro.android.cap6.layout.ExemploGridView" />
+        <activity android:name="br.livro.android.cap6.layout.ExemploGallery" />
+        <activity android:name="br.livro.android.cap6.layout.ExemploImageSwitcher" />
+        <activity android:name="br.livro.android.cap6.layout.ExemploWebView" />
+        <activity android:name="br.livro.android.cap6.layout.tab.ExemploTabHost" />
+        <activity android:name="br.livro.android.cap6.layout.ExemploViewFlipper" />
+        <activity android:name="br.livro.android.cap6.layout.ExemploViewPager" />
+        <activity android:name="br.livro.android.cap6.layout.tab.Tab1" />
+        <activity android:name="br.livro.android.cap6.layout.tab.Tab2" />
+        <activity android:name="br.livro.android.cap6.layout.tab.Tab3" />
+    </application>
+
+</manifest>

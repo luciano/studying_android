@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="textColorPrimary">#daaa00ff</color>
+
+    <color name="indigo50">#E8EAF6</color>
+    <color name="indigo100">#C5CAE9</color>
+    <color name="indigo200">#9FA8DA</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="verde">#ff43ea07</color>
+
+    <color name="refresh_color1">#0000ff</color>
+    <color name="refresh_color2">#00ff00</color>
+    <color name="refresh_color3">#ffff0000</color>
+    <color name="refresh_color4">#f0690f</color>
+    <color name="refresh_color5">#ffffff00</color>
+</resources>

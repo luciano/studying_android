@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.livro.android.cap4"
+    android:versionCode="1"
+    android:versionName="1.0.0" >
+
+    <!--
+        Permisssoes de usuario essas sao pedidas no momento
+        da instalacao do app, somente com as permissoes aceitas
+        pelo usuario que é possivel usar alguns recursos como
+         acessar lista de contatos, acessar internet, wifi
+    -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-sdk
+        android:minSdkVersion="5"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/ic_launcher"
+        android:theme="@style/AppTheme" >
+
+        <activity
+            android:name="Menu"
+            android:label="Cap04-Activity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activity.ExemploCicloVida" />
+        <activity android:name=".activity.ExemploCicloVidaAbrirTela" />
+        <activity android:name=".activity.Tela2" />
+        <activity android:name=".activity.ExemploListaContatos1" />
+        <activity android:name=".activity.ExemploListaContatos3_CursorLoader" />
+        <activity android:name=".activity.ExemploListActivity1" />
+        <activity android:name=".activity.ExemploListView" />
+        <activity android:name=".activity.ExemploSimplesAdapter1" />
+        <activity android:name=".activity.ExemploSimplesAdapter2" />
+        <activity android:name=".activity.smile.ExemploSmileAdapter" />
+        <activity android:name=".activity.ExemploMapa" />
+        <activity android:name=".activity.ExemploMapaCristo" />
+        <activity android:name=".activity.provider.ListActivityCursorCarros" />
+        <activity android:name=".activity.HelloList" />
+    </application>
+S
+</manifest>

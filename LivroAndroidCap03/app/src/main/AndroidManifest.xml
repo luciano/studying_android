@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <!--
+        É a base da aplicacao Android. É obrigatorio e deve ficar na pasta raiz do projeto
+            contem todas as configuracoes necessarias para executar a aplicacao.
+
+
+    <?xml version="1.0" encoding="utf-8"?>
+    <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        package="br.livro.android.cap3"
+        android:versionCode="1"
+        android:versionName="1.0.0" >
+
+    Sempre deve ser iniciado desse modo. O encode sempre deve ser UTF-8
+    Dentro da tag <manifest> é necessario declarar o package princial do projeto, utilizado
+        a tag <package>.
+
+    É obrigatorio que cada activity do projeto esteja declarada no arquivo AndroidManifest.xml
+        caso contrario nao é possivel utiliza-la.
+    Para declarar uma activity usa a tag <activity> que recebe o nome da classe que é sempre
+        relativa ao pacote principal
+    Coloca .nomeactivity se ela estiver no pacote principal se nao estiver tem que escrever em que
+        pacote esta a activity pacote.nomeactivity
+
+    Para utilizar uma activity é obrigatorio configura-la no arquivo AndroidManifest.xml
+
+    Para um activity ser o ponto de partida da aplicacao é necessario delacrar uma tag
+        <intent-filter> com a acao android.intent.action.MAIN e categoria
+        android.intent.category.LAUNCHER dentro da tag <activity>
+        Ex:
+        <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+
+    A acao MAIN significa que a activity em questao pode se riniciada isoladamente como ponto inicial
+        da aplicacao. A categoria LAUNCHER indica que a activity esta disponivel para o usuario
+        na etela inicial junto com outras aplicacoes. Um icone da aplicacao pode ser visualizado
+        na tela das aplicacoes intaladas e ao clicar no icone a activity configurada como principal
+        é iniciada.
+
+    -->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="br.livro.android.cap3"
+    android:versionCode="1"
+    android:versionName="1.0.0" >
+
+    <uses-sdk
+        android:minSdkVersion="4"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Exemplo1"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Exemplo2"
+            tools:ignore="ExportedActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Exemplo3"
+            tools:ignore="ExportedActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Exemplo4"
+            tools:ignore="ExportedActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Exemplo5"
+            tools:ignore="ExportedActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

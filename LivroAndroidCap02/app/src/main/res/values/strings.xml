@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, PrimeiroExemplo</string>
+    <string name="app_name">Cap02-Hello</string>
+</resources>
+
+<!--
+    Esse arquivo esta na pasta values e contem as mensagens da aplicacao para organizar os textos
+    em um unico arquivo centralizado, o que é uma boa pratica de programacao. Desta forma  é
+    possível traduzir este arquivo para diversos idiomas e tornar a aplicacao bastante
+    internacionalizavel.
+
+    Por padrao esse arquivo contem o nome da aplicacao que digitamos ao criar o projeto e a
+    mensagem que aparece na tela principal definida pelo arquivo main.xml
+
+    O nome da aplicacao e definido pela chave app_name e o texto que aparece na tela e definido
+     pela chave hello. Por isso no arquivo main.xml ao definir a tag <TextView> foi utilizado
+     o atribulo andorid:text="@string/hello" para referenciar a mensagem definida pela chave
+     hello. O padrao para acessar essas mensagens é @string/nomeDaChave
+
+     Se fosse necessario ter um suporte a diversas linguas, basta criar uma pasta
+      /res/values/values-(codigo do idioma) e traduzir o arquivo strings.xml desta pasta.
+
+      Exemplo:
+      /res/values-pt (portugues)
+
+      /res/values-en (ingles)
+
+-->

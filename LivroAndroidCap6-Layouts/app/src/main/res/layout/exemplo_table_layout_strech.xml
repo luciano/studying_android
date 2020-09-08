@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1" >
+
+    <!--
+        stretchColumns força o preenchimento da tela inteira
+        recebe o numero das colunas que precisam ser expandidas
+        faz com que atributoo ocupe a linha inteira
+        -->
+
+    <TextView android:text="Lista de Produtos" />
+    <View
+        android:layout_height="2dp"
+        android:background="#ff909090" />
+
+    <TableRow>
+        <TextView android:text="Produto A" />
+        <TextView
+            android:layout_gravity="right"
+            android:text="R$ 100,00" />
+    </TableRow>
+
+    <TableRow>
+        <TextView android:text="Produto B" />
+        <TextView
+            android:layout_gravity="right"
+            android:text="R$ 200,00" />
+    </TableRow>
+
+    <TableRow>
+        <TextView android:text="Produto C" />
+        <TextView
+            android:layout_gravity="right"
+            android:text="R$ 300,00" />
+    </TableRow>
+
+    <View
+        android:layout_height="2dp"
+        android:background="#ff909090" />
+    <LinearLayout
+        android:gravity="bottom|center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <Button
+            android:text="Cancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp" />
+        <Button
+            android:text="Comprar"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp" />
+    </LinearLayout>
+
+</TableLayout>

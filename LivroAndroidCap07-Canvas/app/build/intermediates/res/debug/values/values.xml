@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/home/luciano/AndroidStudioProjects/LivroAndroidCap07-Canvas/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="app_name">Cap07-Canvas</string>
+    <string name="digite_um_numero">Digite um numero</string>
+    <string name="jogo_do_riverraid">Jogo do RiverRaid</string>
+    <string name="ok">OK</string>
+    <!-- From: file:/home/luciano/AndroidStudioProjects/LivroAndroidCap07-Canvas/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+</resources>

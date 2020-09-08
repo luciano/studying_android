@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, Menu</string>
+    <string name="app_name">Cap06-Layouts</string>
+    <string name="nome">Nome</string>
+    <string name="email">Email</string>
+    <string name="observa_es">Observações</string>
+    <string name="enviar">Enviar</string>
+</resources>

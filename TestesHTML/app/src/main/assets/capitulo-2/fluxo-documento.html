@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Fluxo do Documento</title>
+        <link rel="stylesheet" href="css/estilo-fluxo.css">
+    </head>
+    <body>
+        <div id="conteiner">
+            <h2 id="titulo">Elementos Estruturais</h2>
+
+            <p>
+                Invariavelmente você vai cair algum dia num cenário onde não consegue achar a tag certa para aquele conteúdo.
+                Nesse caso, pode usar as tags &lt;div> e &lt;span> que funcionam como coringas.
+                São tags sem nenhum signicado especial mas que podem servir para agruparumcerto conteúdo, tanto um bloco da página quanto
+                um pedaço de texto.
+            </p>
+            <p>
+                E, como vamos ver a seguir, vamos poder estilizar esses divs e spans com CSS customizado. Por padrão, eles
+                não têm estilo algum. Podemos usar IDs para identifica-los no CSS.<br>
+                A <em>diferença</em> entre <strong>span</strong> e <strong>div</strong> é que span é um elemento inline
+                e geralmente é usado para um pequeno bloco de HTML,
+                e div é um elemento de bloco (o que basicamente é equivalente a ter uma quebra de linha antes e depois do elemento) e
+                é usado para agrupar blocos maiores de código (geralmente divisões da página como menu, cabeçalho, etc.).
+            </p>
+        </div>
+
+        <h2>Fluxo do documento com float</h2>
+        <p>
+            Os elementos da página por padrão sao desenhados um em cima do outro.
+            É como se cada elemento fosse uma caixa e o comum é empilha-las verticalmente.<br>
+            A propriedade float permite que tiremos
+            um certo elemento do uxo vertical do documento o que faz com que o conteúdo abaixo dele ua ao seu
+            redor.
+        </p>
+
+        <figure id="figura-1">
+            <img src="img/android.png" alt="Imagem de teste mostrando boneco do Android">
+            <figcaption>Icon Android</figcaption>
+        </figure>
+        <p>
+            Texto de exemplo para usar o float com uma imagem que vai ficar primeiro
+            flutuando a direita e no segundo momento flutuando a esquerda do texto. Essa
+            propriedade do CSS ajuda no design da pagina. Para colocar elementos ao lado
+            do texto e deixar o texto fluir ao redor da imagem ou componente.
+        </p>
+
+        <figure id="figura-2">
+            <img src="img/android.png" alt="Imagem de teste mostrando boneco do Android">
+            <figcaption>Icon Android</figcaption>
+        </figure>
+        <p>
+            Texto de exemplo para usar o float com uma imagem que vai ficar primeiro
+            flutuando a direita e no segundo momento flutuando a esquerda do texto. Essa
+            propriedade do CSS ajuda no design da pagina. Para colocar elementos ao lado
+            do texto e deixar o texto fluir ao redor da imagem ou componente.
+        </p>
+
+    </body>
+</html>

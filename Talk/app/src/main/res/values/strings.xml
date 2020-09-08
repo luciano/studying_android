@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Talk</string>
+
+    <string name="title_activity_iniciante">Assuntos Iniciais</string>
+    <string name="title_activity_intermediario">Assuntos Intermediários</string>
+    <string name="title_activity_avancado">Assuntos Avancados</string>
+    <string name="title_activity_add">Adicionar Assunto</string>
+</resources>

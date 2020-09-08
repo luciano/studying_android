@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/ex_largura_altura" />
+
+        <View
+            android:background="#000"
+            android:layout_width="match_parent"
+            android:layout_height="2dp" />
+
+        <include layout="@layout/ex_margin_padding" />
+
+        <View
+            android:background="#000"
+            android:layout_width="match_parent"
+            android:layout_height="2dp" />
+
+        <include layout="@layout/ex_frame" />
+
+        <View
+            android:background="#000"
+            android:layout_width="match_parent"
+            android:layout_height="2dp" />
+
+        <include layout="@layout/ex_grid" />
+
+        <View
+            android:background="#000"
+            android:layout_width="match_parent"
+            android:layout_height="2dp" />
+
+        <include layout="@layout/ex_table" />
+
+        <View
+            android:background="#000"
+            android:layout_width="match_parent"
+            android:layout_height="2dp" />
+
+        <include layout="@layout/ex_relative" />
+
+        <View
+            android:background="#000"
+            android:layout_width="match_parent"
+            android:layout_height="2dp" />
+
+        <include layout="@layout/ex_linear" />
+
+        <View
+            android:background="#000"
+            android:layout_width="match_parent"
+            android:layout_height="2dp" />
+
+    </LinearLayout>
+
+</ScrollView>
